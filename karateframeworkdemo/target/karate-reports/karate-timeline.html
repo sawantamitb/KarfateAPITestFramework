@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"main","id":1}];
+var items = [{"id":1,"group":1,"content":"getRequest\/getRequest[1:7]","start":1776085135295,"end":1776085135643,"title":"getRequest\/getRequest[1:7] 18:28:55.295-18:28:55.643 To get all the data from application in JSON format"},{"id":2,"group":1,"content":"getRequest\/getRequest[3:25]","start":1776085135654,"end":1776085135682,"title":"getRequest\/getRequest[3:25] 18:28:55.654-18:28:55.682 To get all the data from application in XML format using path variable"},{"id":3,"group":1,"content":"getRequest\/responseMatcher[1:7]","start":1776085136189,"end":1776085136226,"title":"getRequest\/responseMatcher[1:7] 18:28:56.189-18:28:56.226 To get the data in JSON format"},{"id":4,"group":1,"content":"getRequest\/responseMatcher[2:39]","start":1776085136233,"end":1776085136300,"title":"getRequest\/responseMatcher[2:39] 18:28:56.233-18:28:56.300 To get the data in xml format"},{"id":5,"group":1,"content":"getRequest\/responseMatcher[3:71]","start":1776085136306,"end":1776085136316,"title":"getRequest\/responseMatcher[3:71] 18:28:56.306-18:28:56.316 To get the data in JSON format and validate using negate condition"},{"id":6,"group":1,"content":"getRequest\/responseMatcher[4:103]","start":1776085136323,"end":1776085136333,"title":"getRequest\/responseMatcher[4:103] 18:28:56.323-18:28:56.333 To get the data in JSON format and validate a specific property"},{"id":7,"group":1,"content":"getRequest\/validateJSONArray[1:7]","start":1776085136442,"end":1776085136458,"title":"getRequest\/validateJSONArray[1:7] 18:28:56.442-18:28:56.458 To get the data in JSON format"},{"id":8,"group":1,"content":"getRequest\/validateJSONArray[2:27]","start":1776085136464,"end":1776085136488,"title":"getRequest\/validateJSONArray[2:27] 18:28:56.464-18:28:56.488 To get the data in JSON format and validate using fuzzy matcher"},{"id":9,"group":1,"content":"getRequest\/validateXMLResponse[1:7]","start":1776085136564,"end":1776085136604,"title":"getRequest\/validateXMLResponse[1:7] 18:28:56.564-18:28:56.604 To get the data in XML format"},{"id":10,"group":1,"content":"getRequest\/validateXMLResponse[2:22]","start":1776085136612,"end":1776085136635,"title":"getRequest\/validateXMLResponse[2:22] 18:28:56.612-18:28:56.635 To get the data in XML format and validate using fuzzy matcher"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>
