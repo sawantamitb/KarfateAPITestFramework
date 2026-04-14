@@ -1,4 +1,4 @@
-package runner;
+package getRequest.runner;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.Test;
@@ -10,7 +10,7 @@ class ParallelRunnerTest {
 
     @Test
     void testParallel() {
-        Results results = Runner.path("classpath:getRequest")
+        Results results = Runner.path("classpath:featurefiles/getRequest")
                 //.outputCucumberJson(true)
                 .parallel(1);
         assertEquals(0, results.getFailCount(), results.getErrorMessages());

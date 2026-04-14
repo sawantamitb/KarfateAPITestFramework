@@ -1,2 +1,3 @@
-runner\TestGetRunner.class
-runner\ParallelRunnerTest.class
+getRequest\runner\ParallelRunnerTest.class
+getRequest\runner\TestGetRunner.class
+postRequest\runner\TestPostRunner.class
