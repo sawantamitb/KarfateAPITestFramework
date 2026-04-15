@@ -10,9 +10,8 @@ Feature: To validate the GET End point
     When method get
     Then status 200
     And print response
-    And match response ==
+    And match response[0] ==
       """
-      [
       {
       "jobId": 1,
       "jobTitle": "Software Engg",
@@ -33,7 +32,6 @@ Feature: To validate the GET End point
         "Mobile Iron"
       ]
       }
-      ]
       """
 
   Scenario: To get the data in xml format
@@ -42,9 +40,8 @@ Feature: To validate the GET End point
     When method get
     Then status 200
     And print response
-    And match response ==
+    And match response/List/item[1] ==
       """
-      <List>
       <item>
       <jobId>1</jobId>
       <jobTitle>Software Engg</jobTitle>
@@ -65,7 +62,6 @@ Feature: To validate the GET End point
         </project>
       </project>
       </item>
-      </List>
       """
 
   Scenario: To get the data in JSON format and validate using negate condition

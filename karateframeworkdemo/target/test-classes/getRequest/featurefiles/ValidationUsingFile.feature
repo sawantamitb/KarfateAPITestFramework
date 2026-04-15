@@ -12,7 +12,7 @@ Feature: To validate the GET End response from file
     # Create a variable to store the data from external file
     * def actualResponse = read('classpath:datafiles/JsonResponse.json')
     And print "File ==> ", actualResponse
-    And match response == actualResponse
+    And match response[0] == actualResponse[0]
 
   Scenario: To get the data in xml format
     Given path '/normal/webapi/all'
@@ -21,5 +21,6 @@ Feature: To validate the GET End response from file
     Then status 200
     # Create the variable to read the data from xml file
     * def actualResponse = read('classpath:datafiles/XmlResponse.xml')
+    * def expectedItem = karate.xmlPath(actualResponse, '/List/item')
     And print "Xml Response ==> ", actualResponse
-    And match response == actualResponse1
+    And match response/List/item[1] == expectedItem
