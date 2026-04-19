@@ -1,16 +1,18 @@
-11:39:06.847 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
-11:39:08.201 [main] INFO  com.intuit.karate - karate.env system property was: null 
-11:39:08.618 [main] DEBUG com.intuit.karate - request:
-1 > GET http://localhost:9897/normal/webapi/all
+21:39:24.618 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+21:39:26.052 [main] INFO  com.intuit.karate - karate.env system property was: null 
+21:39:26.830 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:9897/normal/webapi/add
 1 > Accept: application/json
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 242
 1 > Host: localhost:9897
 1 > Connection: Keep-Alive
 1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.10)
 1 > Accept-Encoding: gzip,deflate
+{"jobId":17,"jobTitle":"Software Engg - 2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron","Google"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Jenkins"]}]}
 
-
-11:39:08.708 [main] DEBUG com.intuit.karate - response time in milliseconds: 86
-1 < 200
+21:39:26.928 [main] DEBUG com.intuit.karate - response time in milliseconds: 88
+1 < 201
 1 < X-Content-Type-Options: nosniff
 1 < X-XSS-Protection: 1; mode=block
 1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
@@ -19,437 +21,115 @@
 1 < X-Frame-Options: DENY
 1 < Content-Type: application/json
 1 < Transfer-Encoding: chunked
-1 < Date: Wed, 15 Apr 2026 06:09:08 GMT
+1 < Date: Thu, 16 Apr 2026 16:09:26 GMT
 1 < Keep-Alive: timeout=60
 1 < Connection: keep-alive
-[{"jobId":1,"jobTitle":"Software Engg","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle"]}]}]
+{"jobId":17,"jobTitle":"Software Engg - 2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron","Google"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Jenkins"]}]}
 
-11:39:08.753 [main] INFO  com.intuit.karate - [print] [
-  {
-    "jobId": 1,
-    "jobTitle": "Software Engg",
-    "jobDescription": "To develop andriod application",
-    "experience": [
-      "Google",
-      "Apple",
-      "Mobile Iron"
-    ],
-    "project": [
-      {
-        "projectName": "Movie App",
-        "technology": [
-          "Kotlin",
-          "SQL Lite",
-          "Gradle"
-        ]
-      }
-    ]
-  }
-]
- 
-11:39:08.809 [main] INFO  com.intuit.karate - karate.env system property was: null 
-11:39:08.814 [main] DEBUG com.intuit.karate - request:
-1 > GET http://localhost:9897/normal/webapi/all
-1 > Accept: application/xml
-1 > Host: localhost:9897
-1 > Connection: Keep-Alive
-1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.10)
-1 > Accept-Encoding: gzip,deflate
+21:39:26.961 [main] DEBUG com.intuit.karate - request:
+2 > PUT http://localhost:9897/normal/webapi/update
+2 > Accept: application/json
+2 > Content-Type: application/json; charset=UTF-8
+2 > Content-Length: 344
+2 > Host: localhost:9897
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.10)
+2 > Accept-Encoding: gzip,deflate
+{"jobId":17,"jobTitle":"Software Engg - 3","jobDescription":"To develop andriod application and Web Application","experience":["Google","Apple","Mobile Iron","Google"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Jenkins"]},{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Jenkins"]}]}
 
+21:39:26.980 [main] DEBUG com.intuit.karate - response time in milliseconds: 18
+2 < 200
+2 < X-Content-Type-Options: nosniff
+2 < X-XSS-Protection: 1; mode=block
+2 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+2 < Pragma: no-cache
+2 < Expires: 0
+2 < X-Frame-Options: DENY
+2 < Content-Type: application/json
+2 < Transfer-Encoding: chunked
+2 < Date: Thu, 16 Apr 2026 16:09:26 GMT
+2 < Keep-Alive: timeout=60
+2 < Connection: keep-alive
+{"jobId":17,"jobTitle":"Software Engg - 3","jobDescription":"To develop andriod application and Web Application","experience":["Google","Apple","Mobile Iron","Google"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Jenkins"]},{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Jenkins"]}]}
 
-11:39:08.864 [main] DEBUG com.intuit.karate - response time in milliseconds: 49
-1 < 200
-1 < X-Content-Type-Options: nosniff
-1 < X-XSS-Protection: 1; mode=block
-1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
-1 < Pragma: no-cache
-1 < Expires: 0
-1 < X-Frame-Options: DENY
-1 < Content-Type: application/xml
-1 < Transfer-Encoding: chunked
-1 < Date: Wed, 15 Apr 2026 06:09:08 GMT
-1 < Keep-Alive: timeout=60
-1 < Connection: keep-alive
-<List><item><jobId>1</jobId><jobTitle>Software Engg</jobTitle><jobDescription>To develop andriod application</jobDescription><experience><experience>Google</experience><experience>Apple</experience><experience>Mobile Iron</experience></experience><project><project><projectName>Movie App</projectName><technology><technology>Kotlin</technology><technology>SQL Lite</technology><technology>Gradle</technology></technology></project></project></item></List>
-
-11:39:08.877 [main] INFO  com.intuit.karate - [print] <List>
-  <item>
-    <jobId>1</jobId>
-    <jobTitle>Software Engg</jobTitle>
-    <jobDescription>To develop andriod application</jobDescription>
-    <experience>
-      <experience>Google</experience>
-      <experience>Apple</experience>
-      <experience>Mobile Iron</experience>
-    </experience>
-    <project>
-      <project>
-        <projectName>Movie App</projectName>
-        <technology>
-          <technology>Kotlin</technology>
-          <technology>SQL Lite</technology>
-          <technology>Gradle</technology>
-        </technology>
-      </project>
-    </project>
-  </item>
-</List>
- 
-11:39:08.980 [main] INFO  com.intuit.karate - karate.env system property was: null 
-11:39:08.985 [main] DEBUG com.intuit.karate - request:
-1 > GET http://localhost:9897/normal/webapi/all
-1 > Accept: application/json
-1 > Host: localhost:9897
-1 > Connection: Keep-Alive
-1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.10)
-1 > Accept-Encoding: gzip,deflate
-
-
-11:39:09.017 [main] DEBUG com.intuit.karate - response time in milliseconds: 32
-1 < 200
-1 < X-Content-Type-Options: nosniff
-1 < X-XSS-Protection: 1; mode=block
-1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
-1 < Pragma: no-cache
-1 < Expires: 0
-1 < X-Frame-Options: DENY
-1 < Content-Type: application/json
-1 < Transfer-Encoding: chunked
-1 < Date: Wed, 15 Apr 2026 06:09:08 GMT
-1 < Keep-Alive: timeout=60
-1 < Connection: keep-alive
-[{"jobId":1,"jobTitle":"Software Engg","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle"]}]}]
-
-11:39:09.019 [main] INFO  com.intuit.karate - [print] [
-  {
-    "jobId": 1,
-    "jobTitle": "Software Engg",
-    "jobDescription": "To develop andriod application",
-    "experience": [
-      "Google",
-      "Apple",
-      "Mobile Iron"
-    ],
-    "project": [
-      {
-        "projectName": "Movie App",
-        "technology": [
-          "Kotlin",
-          "SQL Lite",
-          "Gradle"
-        ]
-      }
-    ]
-  }
-]
- 
-11:39:09.031 [main] INFO  com.intuit.karate - karate.env system property was: null 
-11:39:09.036 [main] DEBUG com.intuit.karate - request:
-1 > GET http://localhost:9897/normal/webapi/all
-1 > Accept: application/json
-1 > Host: localhost:9897
-1 > Connection: Keep-Alive
-1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.10)
-1 > Accept-Encoding: gzip,deflate
-
-
-11:39:09.066 [main] DEBUG com.intuit.karate - response time in milliseconds: 30
-1 < 200
-1 < X-Content-Type-Options: nosniff
-1 < X-XSS-Protection: 1; mode=block
-1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
-1 < Pragma: no-cache
-1 < Expires: 0
-1 < X-Frame-Options: DENY
-1 < Content-Type: application/json
-1 < Transfer-Encoding: chunked
-1 < Date: Wed, 15 Apr 2026 06:09:08 GMT
-1 < Keep-Alive: timeout=60
-1 < Connection: keep-alive
-[{"jobId":1,"jobTitle":"Software Engg","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle"]}]}]
-
-11:39:09.069 [main] INFO  com.intuit.karate - [print] [
-  {
-    "jobId": 1,
-    "jobTitle": "Software Engg",
-    "jobDescription": "To develop andriod application",
-    "experience": [
-      "Google",
-      "Apple",
-      "Mobile Iron"
-    ],
-    "project": [
-      {
-        "projectName": "Movie App",
-        "technology": [
-          "Kotlin",
-          "SQL Lite",
-          "Gradle"
-        ]
-      }
-    ]
-  }
-]
- 
-11:39:10.000 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 9 (0 remaining) classpath:getRequest/featurefiles/responseMatcher.feature
-11:39:10.014 [main] INFO  com.intuit.karate - karate.env system property was: null 
-11:39:10.018 [main] DEBUG com.intuit.karate - request:
-1 > GET http://localhost:9897/normal/webapi/all
-1 > Accept: application/json
-1 > Host: localhost:9897
-1 > Connection: Keep-Alive
-1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.10)
-1 > Accept-Encoding: gzip,deflate
-
-
-11:39:10.029 [main] DEBUG com.intuit.karate - response time in milliseconds: 10
-1 < 200
-1 < X-Content-Type-Options: nosniff
-1 < X-XSS-Protection: 1; mode=block
-1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
-1 < Pragma: no-cache
-1 < Expires: 0
-1 < X-Frame-Options: DENY
-1 < Content-Type: application/json
-1 < Transfer-Encoding: chunked
-1 < Date: Wed, 15 Apr 2026 06:09:10 GMT
-1 < Keep-Alive: timeout=60
-1 < Connection: keep-alive
-[{"jobId":1,"jobTitle":"Software Engg","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle"]}]}]
-
-11:39:10.049 [main] INFO  com.intuit.karate - karate.env system property was: null 
-11:39:10.053 [main] DEBUG com.intuit.karate - request:
-1 > GET http://localhost:9897/normal/webapi/all
-1 > Accept: application/json
-1 > Host: localhost:9897
-1 > Connection: Keep-Alive
-1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.10)
-1 > Accept-Encoding: gzip,deflate
-
-
-11:39:10.064 [main] DEBUG com.intuit.karate - response time in milliseconds: 10
-1 < 200
-1 < X-Content-Type-Options: nosniff
-1 < X-XSS-Protection: 1; mode=block
-1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
-1 < Pragma: no-cache
-1 < Expires: 0
-1 < X-Frame-Options: DENY
-1 < Content-Type: application/json
-1 < Transfer-Encoding: chunked
-1 < Date: Wed, 15 Apr 2026 06:09:10 GMT
-1 < Keep-Alive: timeout=60
-1 < Connection: keep-alive
-[{"jobId":1,"jobTitle":"Software Engg","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle"]}]}]
-
-11:39:10.258 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 2 of 9 (0 remaining) classpath:getRequest/featurefiles/validateJSONArray.feature
-11:39:10.265 [main] INFO  com.intuit.karate - karate.env system property was: null 
-11:39:10.269 [main] DEBUG com.intuit.karate - request:
-1 > GET http://localhost:9897/normal/webapi/all
-1 > Accept: application/xml
-1 > Host: localhost:9897
-1 > Connection: Keep-Alive
-1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.10)
-1 > Accept-Encoding: gzip,deflate
-
-
-11:39:10.277 [main] DEBUG com.intuit.karate - response time in milliseconds: 7
-1 < 200
-1 < X-Content-Type-Options: nosniff
-1 < X-XSS-Protection: 1; mode=block
-1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
-1 < Pragma: no-cache
-1 < Expires: 0
-1 < X-Frame-Options: DENY
-1 < Content-Type: application/xml
-1 < Transfer-Encoding: chunked
-1 < Date: Wed, 15 Apr 2026 06:09:10 GMT
-1 < Keep-Alive: timeout=60
-1 < Connection: keep-alive
-<List><item><jobId>1</jobId><jobTitle>Software Engg</jobTitle><jobDescription>To develop andriod application</jobDescription><experience><experience>Google</experience><experience>Apple</experience><experience>Mobile Iron</experience></experience><project><project><projectName>Movie App</projectName><technology><technology>Kotlin</technology><technology>SQL Lite</technology><technology>Gradle</technology></technology></project></project></item></List>
-
-11:39:10.293 [main] INFO  com.intuit.karate - karate.env system property was: null 
-11:39:10.296 [main] DEBUG com.intuit.karate - request:
-1 > GET http://localhost:9897/normal/webapi/all
-1 > Accept: application/xml
-1 > Host: localhost:9897
-1 > Connection: Keep-Alive
-1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.10)
-1 > Accept-Encoding: gzip,deflate
-
-
-11:39:10.303 [main] DEBUG com.intuit.karate - response time in milliseconds: 7
-1 < 200
-1 < X-Content-Type-Options: nosniff
-1 < X-XSS-Protection: 1; mode=block
-1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
-1 < Pragma: no-cache
-1 < Expires: 0
-1 < X-Frame-Options: DENY
-1 < Content-Type: application/xml
-1 < Transfer-Encoding: chunked
-1 < Date: Wed, 15 Apr 2026 06:09:10 GMT
-1 < Keep-Alive: timeout=60
-1 < Connection: keep-alive
-<List><item><jobId>1</jobId><jobTitle>Software Engg</jobTitle><jobDescription>To develop andriod application</jobDescription><experience><experience>Google</experience><experience>Apple</experience><experience>Mobile Iron</experience></experience><project><project><projectName>Movie App</projectName><technology><technology>Kotlin</technology><technology>SQL Lite</technology><technology>Gradle</technology></technology></project></project></item></List>
-
-11:39:10.450 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 3 of 9 (0 remaining) classpath:getRequest/featurefiles/validateXMLResponse.feature
-11:39:10.462 [main] INFO  com.intuit.karate - karate.env system property was: null 
-11:39:10.468 [main] INFO  com.intuit.karate - [print] Int Variable ==>  10 
-11:39:10.470 [main] INFO  com.intuit.karate - [print] String Variable ==>  Karate 
-11:39:10.472 [main] INFO  com.intuit.karate - [print] New Variable ==>  20 
-11:39:10.473 [main] INFO  com.intuit.karate - [print] BackGroud Section Variabel ==>  Google 20 
-11:39:10.477 [main] INFO  com.intuit.karate - karate.env system property was: null 
-11:39:10.480 [main] INFO  com.intuit.karate - [print] Previous Scenario ==>  1 
-11:39:10.482 [main] INFO  com.intuit.karate - [print] Previous Scenario ==>  New 
-11:39:10.482 [main] INFO  com.intuit.karate - [print] Previous Scenario ==>  91 
-11:39:10.483 [main] INFO  com.intuit.karate - [print] BackGroud Section Variabel ==>  Google 20 
-11:39:10.576 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 4 of 9 (0 remaining) classpath:getRequest/featurefiles/Variables.feature
-11:39:10.583 [main] INFO  com.intuit.karate - karate.env system property was: null 
-11:39:10.587 [main] DEBUG com.intuit.karate - request:
-1 > GET http://localhost:9897/normal/webapi/all
-1 > Accept: application/json
-1 > Host: localhost:9897
-1 > Connection: Keep-Alive
-1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.10)
-1 > Accept-Encoding: gzip,deflate
-
-
-11:39:10.594 [main] DEBUG com.intuit.karate - response time in milliseconds: 6
-1 < 200
-1 < X-Content-Type-Options: nosniff
-1 < X-XSS-Protection: 1; mode=block
-1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
-1 < Pragma: no-cache
-1 < Expires: 0
-1 < X-Frame-Options: DENY
-1 < Content-Type: application/json
-1 < Transfer-Encoding: chunked
-1 < Date: Wed, 15 Apr 2026 06:09:10 GMT
-1 < Keep-Alive: timeout=60
-1 < Connection: keep-alive
-[{"jobId":1,"jobTitle":"Software Engg","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle"]}]}]
-
-11:39:10.602 [main] INFO  com.intuit.karate - [print] File ==>  [
-  {
-    "jobId": 1,
-    "jobTitle": "Software Engg",
-    "project": [
-      {
-        "technology": [
-          "Kotlin",
-          "SQL Lite",
-          "Gradle"
-        ],
-        "projectName": "Movie App"
-      }
-    ],
-    "jobDescription": "To develop andriod application",
-    "experience": [
-      "Google",
-      "Apple",
-      "Mobile Iron"
-    ]
-  }
-]
- 
-11:39:10.608 [main] INFO  com.intuit.karate - karate.env system property was: null 
-11:39:10.612 [main] DEBUG com.intuit.karate - request:
-1 > GET http://localhost:9897/normal/webapi/all
-1 > Accept: application/xml
-1 > Host: localhost:9897
-1 > Connection: Keep-Alive
-1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.10)
-1 > Accept-Encoding: gzip,deflate
-
-
-11:39:10.619 [main] DEBUG com.intuit.karate - response time in milliseconds: 6
-1 < 200
-1 < X-Content-Type-Options: nosniff
-1 < X-XSS-Protection: 1; mode=block
-1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
-1 < Pragma: no-cache
-1 < Expires: 0
-1 < X-Frame-Options: DENY
-1 < Content-Type: application/xml
-1 < Transfer-Encoding: chunked
-1 < Date: Wed, 15 Apr 2026 06:09:10 GMT
-1 < Keep-Alive: timeout=60
-1 < Connection: keep-alive
-<List><item><jobId>1</jobId><jobTitle>Software Engg</jobTitle><jobDescription>To develop andriod application</jobDescription><experience><experience>Google</experience><experience>Apple</experience><experience>Mobile Iron</experience></experience><project><project><projectName>Movie App</projectName><technology><technology>Kotlin</technology><technology>SQL Lite</technology><technology>Gradle</technology></technology></project></project></item></List>
-
-11:39:10.670 [main] INFO  com.intuit.karate - [print] Xml Response ==>  <List>
-  <item>
-    <jobId>1</jobId>
-    <jobTitle>Software Engg</jobTitle>
-    <jobDescription>To develop andriod application</jobDescription>
-    <experience>
-      <experience>Google</experience>
-      <experience>Apple</experience>
-      <experience>Mobile Iron</experience>
-    </experience>
-    <project>
-      <project>
-        <projectName>Movie App</projectName>
-        <technology>
-          <technology>Kotlin</technology>
-          <technology>SQL Lite</technology>
-          <technology>Gradle</technology>
-        </technology>
-      </project>
-    </project>
-  </item>
-</List>
- 
-11:39:10.743 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 5 of 9 (0 remaining) classpath:getRequest/featurefiles/ValidationUsingFile.feature
-11:39:10.750 [main] INFO  com.intuit.karate - karate.env system property was: null 
-11:39:10.753 [main] INFO  com.intuit.karate - [print] Function Value =>  10 
-11:39:10.762 [main] INFO  com.intuit.karate - [print] Function Value =>  71 
-11:39:10.765 [main] INFO  com.intuit.karate - [print] Function Value =>  Hello World 
-11:39:10.790 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 6 of 9 (0 remaining) classpath:postRequest/featurefiles/javaScriptExecutor.feature
-11:39:10.794 [main] INFO  com.intuit.karate - karate.env system property was: null 
-11:39:10.796 [main] DEBUG com.intuit.karate - request:
-1 > GET http://localhost:9897/normal/webapi/all
-1 > Host: localhost:9897
-1 > Connection: Keep-Alive
-1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.10)
-1 > Accept-Encoding: gzip,deflate
-
-
-11:39:10.802 [main] DEBUG com.intuit.karate - response time in milliseconds: 3
-1 < 200
-1 < X-Content-Type-Options: nosniff
-1 < X-XSS-Protection: 1; mode=block
-1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
-1 < Pragma: no-cache
-1 < Expires: 0
-1 < X-Frame-Options: DENY
-1 < Content-Type: application/json
-1 < Transfer-Encoding: chunked
-1 < Date: Wed, 15 Apr 2026 06:09:10 GMT
-1 < Keep-Alive: timeout=60
-1 < Connection: keep-alive
-[{"jobId":1,"jobTitle":"Software Engg","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle"]}]}]
-
-11:39:10.831 [main] INFO  com.intuit.karate - [print] Job Title ==>  [
-  "Software Engg"
-]
- 
-11:39:10.833 [main] INFO  com.intuit.karate - [print] Job Description ==>  [
-  "To develop andriod application"
-]
- 
-11:39:10.833 [main] INFO  com.intuit.karate - [print] Experience ==>  [
+21:39:27.110 [main] INFO  com.intuit.karate - [print] [
   [
-    "Google",
-    "Apple",
-    "Mobile Iron"
+    {
+      "projectName": "Movie App",
+      "technology": [
+        "Kotlin",
+        "SQL Lite",
+        "Gradle",
+        "Jenkins"
+      ]
+    },
+    {
+      "projectName": "Movie App",
+      "technology": [
+        "Kotlin",
+        "SQL Lite",
+        "Gradle",
+        "Jenkins"
+      ]
+    }
   ]
 ]
  
-11:39:10.868 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 7 of 9 (0 remaining) classpath:postRequest/featurefiles/jsonPathExpression.feature
-11:39:10.874 [main] INFO  com.intuit.karate - karate.env system property was: null 
-11:39:10.933 [main] DEBUG com.intuit.karate - request:
+21:39:27.162 [main] INFO  com.intuit.karate - karate.env system property was: null 
+21:39:27.178 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:9897/normal/webapi/add
+1 > Accept: application/json
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 244
+1 > Host: localhost:9897
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.10)
+1 > Accept-Encoding: gzip,deflate
+{"jobId":8145,"jobTitle":"Software Engg - 2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron","Google"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Jenkins"]}]}
+
+21:39:27.190 [main] DEBUG com.intuit.karate - response time in milliseconds: 10
+1 < 201
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Pragma: no-cache
+1 < Expires: 0
+1 < X-Frame-Options: DENY
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Thu, 16 Apr 2026 16:09:26 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"jobId":8145,"jobTitle":"Software Engg - 2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron","Google"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Jenkins"]}]}
+
+21:39:27.202 [main] DEBUG com.intuit.karate - request:
+2 > PUT http://localhost:9897/normal/webapi/update
+2 > Accept: application/json
+2 > Content-Type: application/json; charset=UTF-8
+2 > Content-Length: 346
+2 > Host: localhost:9897
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.10)
+2 > Accept-Encoding: gzip,deflate
+{"jobId":4206,"jobTitle":"Software Engg - 3","jobDescription":"To develop andriod application and Web Application","experience":["Google","Apple","Mobile Iron","Google"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Jenkins"]},{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Jenkins"]}]}
+
+21:39:27.216 [main] DEBUG com.intuit.karate - response time in milliseconds: 12
+2 < 404
+2 < X-Content-Type-Options: nosniff
+2 < X-XSS-Protection: 1; mode=block
+2 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+2 < Pragma: no-cache
+2 < Expires: 0
+2 < X-Frame-Options: DENY
+2 < Content-Type: application/json
+2 < Transfer-Encoding: chunked
+2 < Date: Thu, 16 Apr 2026 16:09:26 GMT
+2 < Keep-Alive: timeout=60
+2 < Connection: keep-alive
+{"message":"Failed to update Entry [jobId=4206, jobTitle=Software Engg - 3, jobDescription=To develop andriod application and Web Application, experience=[Ljava.lang.Object;@70ddc9ba, project=[[projectName=Movie App, technology=[Kotlin, SQL Lite, Gradle, Jenkins]], [projectName=Movie App, technology=[Kotlin, SQL Lite, Gradle, Jenkins]]]]"}
+
+21:39:27.236 [main] INFO  com.intuit.karate - karate.env system property was: null 
+21:39:27.282 [main] DEBUG com.intuit.karate - request:
 1 > POST http://localhost:9897/normal/webapi/add
 1 > Accept: application/json
 1 > Content-Type: application/json; charset=UTF-8
@@ -460,7 +140,7 @@
 1 > Accept-Encoding: gzip,deflate
 {"jobId":5,"jobTitle":"Software Engg - 2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron","Google"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Jenkins"]}]}
 
-11:39:11.064 [main] DEBUG com.intuit.karate - response time in milliseconds: 130
+21:39:27.291 [main] DEBUG com.intuit.karate - response time in milliseconds: 9
 1 < 201
 1 < X-Content-Type-Options: nosniff
 1 < X-XSS-Protection: 1; mode=block
@@ -470,12 +150,12 @@
 1 < X-Frame-Options: DENY
 1 < Content-Type: application/json
 1 < Transfer-Encoding: chunked
-1 < Date: Wed, 15 Apr 2026 06:09:11 GMT
+1 < Date: Thu, 16 Apr 2026 16:09:26 GMT
 1 < Keep-Alive: timeout=60
 1 < Connection: keep-alive
 {"jobId":5,"jobTitle":"Software Engg - 2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron","Google"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Jenkins"]}]}
 
-11:39:11.065 [main] INFO  com.intuit.karate - [print] {
+21:39:27.295 [main] INFO  com.intuit.karate - [print] {
   "jobId": 5,
   "jobTitle": "Software Engg - 2",
   "jobDescription": "To develop andriod application",
@@ -498,8 +178,7 @@
   ]
 }
  
-11:39:11.070 [main] INFO  com.intuit.karate - karate.env system property was: null 
-11:39:11.076 [main] DEBUG com.intuit.karate - request:
+21:39:27.527 [main] DEBUG com.intuit.karate - request:
 1 > POST http://localhost:9897/normal/webapi/add
 1 > Accept: application/json
 1 > Content-Type: application/xml; charset=UTF-8
@@ -510,7 +189,7 @@
 1 > Accept-Encoding: gzip,deflate
 <item><jobId>7</jobId><jobTitle>Software Engg</jobTitle><jobDescription>To develop andriod application</jobDescription><experience><experience>Google</experience><experience>Apple</experience><experience>Mobile Iron</experience><experience>Subex</experience></experience><project><project><projectName>Movie App</projectName><technology><technology>Kotlin</technology><technology>SQL Lite</technology><technology>Gradle</technology><technology>Jenkins</technology></technology></project></project></item>
 
-11:39:11.279 [main] DEBUG com.intuit.karate - response time in milliseconds: 203
+21:39:27.545 [main] DEBUG com.intuit.karate - response time in milliseconds: 15
 1 < 201
 1 < X-Content-Type-Options: nosniff
 1 < X-XSS-Protection: 1; mode=block
@@ -520,12 +199,12 @@
 1 < X-Frame-Options: DENY
 1 < Content-Type: application/json
 1 < Transfer-Encoding: chunked
-1 < Date: Wed, 15 Apr 2026 06:09:11 GMT
+1 < Date: Thu, 16 Apr 2026 16:09:26 GMT
 1 < Keep-Alive: timeout=60
 1 < Connection: keep-alive
 {"jobId":7,"jobTitle":"Software Engg","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron","Subex"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Jenkins"]}]}
 
-11:39:11.281 [main] INFO  com.intuit.karate - [print] {
+21:39:27.550 [main] INFO  com.intuit.karate - [print] {
   "jobId": 7,
   "jobTitle": "Software Engg",
   "jobDescription": "To develop andriod application",
@@ -548,8 +227,7 @@
   ]
 }
  
-11:39:11.287 [main] INFO  com.intuit.karate - karate.env system property was: null 
-11:39:11.293 [main] DEBUG com.intuit.karate - request:
+21:39:27.591 [main] DEBUG com.intuit.karate - request:
 1 > POST http://localhost:9897/normal/webapi/add
 1 > Accept: application/xml
 1 > Content-Type: application/xml; charset=UTF-8
@@ -560,7 +238,7 @@
 1 > Accept-Encoding: gzip,deflate
 <item><jobId>7</jobId><jobTitle>Software Engg</jobTitle><jobDescription>To develop andriod application</jobDescription><experience><experience>Google</experience><experience>Apple</experience><experience>Mobile Iron</experience><experience>Subex</experience></experience><project><project><projectName>Movie App</projectName><technology><technology>Kotlin</technology><technology>SQL Lite</technology><technology>Gradle</technology><technology>Jenkins</technology></technology></project></project></item>
 
-11:39:11.303 [main] DEBUG com.intuit.karate - response time in milliseconds: 8
+21:39:27.606 [main] DEBUG com.intuit.karate - response time in milliseconds: 13
 1 < 201
 1 < X-Content-Type-Options: nosniff
 1 < X-XSS-Protection: 1; mode=block
@@ -570,12 +248,12 @@
 1 < X-Frame-Options: DENY
 1 < Content-Type: application/xml
 1 < Transfer-Encoding: chunked
-1 < Date: Wed, 15 Apr 2026 06:09:11 GMT
+1 < Date: Thu, 16 Apr 2026 16:09:26 GMT
 1 < Keep-Alive: timeout=60
 1 < Connection: keep-alive
 <Job><jobId>7</jobId><jobTitle>Software Engg</jobTitle><jobDescription>To develop andriod application</jobDescription><experience><experience>Google</experience><experience>Apple</experience><experience>Mobile Iron</experience><experience>Subex</experience></experience><project><project><projectName>Movie App</projectName><technology><technology>Kotlin</technology><technology>SQL Lite</technology><technology>Gradle</technology><technology>Jenkins</technology></technology></project></project></Job>
 
-11:39:11.307 [main] INFO  com.intuit.karate - [print] <Job>
+21:39:27.617 [main] INFO  com.intuit.karate - [print] <Job>
   <jobId>7</jobId>
   <jobTitle>Software Engg</jobTitle>
   <jobDescription>To develop andriod application</jobDescription>
@@ -598,8 +276,7 @@
   </project>
 </Job>
  
-11:39:11.315 [main] INFO  com.intuit.karate - karate.env system property was: null 
-11:39:11.323 [main] DEBUG com.intuit.karate - request:
+21:39:27.718 [main] DEBUG com.intuit.karate - request:
 1 > POST http://localhost:9897/normal/webapi/add
 1 > Accept: application/json
 1 > Content-Type: application/json; charset=UTF-8
@@ -610,7 +287,7 @@
 1 > Accept-Encoding: gzip,deflate
 {"jobId":5,"jobTitle":"Software Engg - 2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron","Google"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Jenkins"]}]}
 
-11:39:11.333 [main] DEBUG com.intuit.karate - response time in milliseconds: 9
+21:39:27.730 [main] DEBUG com.intuit.karate - response time in milliseconds: 10
 1 < 201
 1 < X-Content-Type-Options: nosniff
 1 < X-XSS-Protection: 1; mode=block
@@ -620,12 +297,12 @@
 1 < X-Frame-Options: DENY
 1 < Content-Type: application/json
 1 < Transfer-Encoding: chunked
-1 < Date: Wed, 15 Apr 2026 06:09:11 GMT
+1 < Date: Thu, 16 Apr 2026 16:09:26 GMT
 1 < Keep-Alive: timeout=60
 1 < Connection: keep-alive
 {"jobId":5,"jobTitle":"Software Engg - 2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron","Google"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Jenkins"]}]}
 
-11:39:11.337 [main] INFO  com.intuit.karate - [print] {
+21:39:27.735 [main] INFO  com.intuit.karate - [print] {
   "jobId": 5,
   "jobTitle": "Software Engg - 2",
   "jobDescription": "To develop andriod application",
@@ -648,8 +325,8 @@
   ]
 }
  
-11:39:11.343 [main] INFO  com.intuit.karate - karate.env system property was: null 
-11:39:11.350 [main] DEBUG com.intuit.karate - request:
+21:39:27.752 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'body' with new value: read('classpath:datafiles/jobEntry.xml')
+21:39:27.775 [main] DEBUG com.intuit.karate - request:
 1 > POST http://localhost:9897/normal/webapi/add
 1 > Accept: application/json
 1 > Content-Type: application/xml; charset=UTF-8
@@ -681,7 +358,7 @@
 	</project>
 </item>
 
-11:39:11.360 [main] DEBUG com.intuit.karate - response time in milliseconds: 9
+21:39:27.834 [main] DEBUG com.intuit.karate - response time in milliseconds: 57
 1 < 201
 1 < X-Content-Type-Options: nosniff
 1 < X-XSS-Protection: 1; mode=block
@@ -691,12 +368,12 @@
 1 < X-Frame-Options: DENY
 1 < Content-Type: application/json
 1 < Transfer-Encoding: chunked
-1 < Date: Wed, 15 Apr 2026 06:09:11 GMT
+1 < Date: Thu, 16 Apr 2026 16:09:26 GMT
 1 < Keep-Alive: timeout=60
 1 < Connection: keep-alive
 {"jobId":7,"jobTitle":"Software Engg","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron","Subex"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Jenkins"]}]}
 
-11:39:11.361 [main] INFO  com.intuit.karate - [print] {
+21:39:27.840 [main] INFO  com.intuit.karate - [print] {
   "jobId": 7,
   "jobTitle": "Software Engg",
   "jobDescription": "To develop andriod application",
@@ -719,8 +396,7 @@
   ]
 }
  
-11:39:11.366 [main] INFO  com.intuit.karate - karate.env system property was: null 
-11:39:11.372 [main] DEBUG com.intuit.karate - request:
+21:39:27.883 [main] DEBUG com.intuit.karate - request:
 1 > POST http://localhost:9897/normal/webapi/add
 1 > Accept: application/json
 1 > Content-Type: application/json; charset=UTF-8
@@ -729,9 +405,9 @@
 1 > Connection: Keep-Alive
 1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.10)
 1 > Accept-Encoding: gzip,deflate
-{"jobId":89,"jobTitle":"Software Engg - 2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron","Google"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Jenkins"]}]}
+{"jobId":73,"jobTitle":"Software Engg - 2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron","Google"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Jenkins"]}]}
 
-11:39:11.387 [main] DEBUG com.intuit.karate - response time in milliseconds: 15
+21:39:27.900 [main] DEBUG com.intuit.karate - response time in milliseconds: 16
 1 < 201
 1 < X-Content-Type-Options: nosniff
 1 < X-XSS-Protection: 1; mode=block
@@ -741,13 +417,13 @@
 1 < X-Frame-Options: DENY
 1 < Content-Type: application/json
 1 < Transfer-Encoding: chunked
-1 < Date: Wed, 15 Apr 2026 06:09:11 GMT
+1 < Date: Thu, 16 Apr 2026 16:09:27 GMT
 1 < Keep-Alive: timeout=60
 1 < Connection: keep-alive
-{"jobId":89,"jobTitle":"Software Engg - 2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron","Google"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Jenkins"]}]}
+{"jobId":73,"jobTitle":"Software Engg - 2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron","Google"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Jenkins"]}]}
 
-11:39:11.391 [main] INFO  com.intuit.karate - [print] {
-  "jobId": 89,
+21:39:27.906 [main] INFO  com.intuit.karate - [print] {
+  "jobId": 73,
   "jobTitle": "Software Engg - 2",
   "jobDescription": "To develop andriod application",
   "experience": [
@@ -769,8 +445,8 @@
   ]
 }
  
-11:39:11.400 [main] INFO  com.intuit.karate - karate.env system property was: null 
-11:39:11.433 [main] DEBUG com.intuit.karate - request:
+21:39:27.936 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'getJobID' with new value: function() {return Math.floor((100) * Math.random());}
+21:39:27.954 [main] DEBUG com.intuit.karate - request:
 1 > POST http://localhost:9897/normal/webapi/add
 1 > Accept: application/json
 1 > Content-Type: application/xml; charset=UTF-8
@@ -779,9 +455,9 @@
 1 > Connection: Keep-Alive
 1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.10)
 1 > Accept-Encoding: gzip,deflate
-<item><jobId>67</jobId><jobTitle>Software Engg</jobTitle><jobDescription>To develop andriod application</jobDescription><experience><experience>Google</experience><experience>Apple</experience><experience>Mobile Iron</experience><experience>Subex</experience></experience><project><project><projectName>Movie App</projectName><technology><technology>Kotlin</technology><technology>SQL Lite</technology><technology>Gradle</technology><technology>Jenkins</technology></technology></project></project></item>
+<item><jobId>40</jobId><jobTitle>Software Engg</jobTitle><jobDescription>To develop andriod application</jobDescription><experience><experience>Google</experience><experience>Apple</experience><experience>Mobile Iron</experience><experience>Subex</experience></experience><project><project><projectName>Movie App</projectName><technology><technology>Kotlin</technology><technology>SQL Lite</technology><technology>Gradle</technology><technology>Jenkins</technology></technology></project></project></item>
 
-11:39:11.447 [main] DEBUG com.intuit.karate - response time in milliseconds: 14
+21:39:27.969 [main] DEBUG com.intuit.karate - response time in milliseconds: 11
 1 < 201
 1 < X-Content-Type-Options: nosniff
 1 < X-XSS-Protection: 1; mode=block
@@ -791,13 +467,13 @@
 1 < X-Frame-Options: DENY
 1 < Content-Type: application/json
 1 < Transfer-Encoding: chunked
-1 < Date: Wed, 15 Apr 2026 06:09:11 GMT
+1 < Date: Thu, 16 Apr 2026 16:09:27 GMT
 1 < Keep-Alive: timeout=60
 1 < Connection: keep-alive
-{"jobId":67,"jobTitle":"Software Engg","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron","Subex"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Jenkins"]}]}
+{"jobId":40,"jobTitle":"Software Engg","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron","Subex"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Jenkins"]}]}
 
-11:39:11.450 [main] INFO  com.intuit.karate - [print] {
-  "jobId": 67,
+21:39:28.014 [main] INFO  com.intuit.karate - [print] {
+  "jobId": 40,
   "jobTitle": "Software Engg",
   "jobDescription": "To develop andriod application",
   "experience": [
@@ -819,9 +495,57 @@
   ]
 }
  
-11:39:11.693 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 8 of 9 (0 remaining) classpath:postRequest/featurefiles/createJobEntry.feature
-11:39:11.708 [main] INFO  com.intuit.karate - karate.env system property was: null 
-11:39:11.713 [main] DEBUG com.intuit.karate - request:
+21:39:28.043 [main] DEBUG com.intuit.karate - request:
+1 > PUT http://localhost:9897/normal/webapi/update
+1 > Accept: application/json
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 343
+1 > Host: localhost:9897
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.10)
+1 > Accept-Encoding: gzip,deflate
+{"jobId":5,"jobTitle":"Software Engg - 3","jobDescription":"To develop andriod application and Web Application","experience":["Google","Apple","Mobile Iron","Google"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Jenkins"]},{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Jenkins"]}]}
+
+21:39:28.059 [main] DEBUG com.intuit.karate - response time in milliseconds: 14
+1 < 200
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Pragma: no-cache
+1 < Expires: 0
+1 < X-Frame-Options: DENY
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Thu, 16 Apr 2026 16:09:27 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"jobId":5,"jobTitle":"Software Engg - 3","jobDescription":"To develop andriod application and Web Application","experience":["Google","Apple","Mobile Iron","Google"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Jenkins"]},{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Jenkins"]}]}
+
+21:39:28.067 [main] INFO  com.intuit.karate - [print] [
+  [
+    {
+      "projectName": "Movie App",
+      "technology": [
+        "Kotlin",
+        "SQL Lite",
+        "Gradle",
+        "Jenkins"
+      ]
+    },
+    {
+      "projectName": "Movie App",
+      "technology": [
+        "Kotlin",
+        "SQL Lite",
+        "Gradle",
+        "Jenkins"
+      ]
+    }
+  ]
+]
+ 
+21:39:28.097 [main] INFO  com.intuit.karate - karate.env system property was: null 
+21:39:28.123 [main] DEBUG com.intuit.karate - request:
 1 > POST http://localhost:9897/normal/webapi/add
 1 > Accept: application/json
 1 > Content-Type: application/json; charset=UTF-8
@@ -832,7 +556,7 @@
 1 > Accept-Encoding: gzip,deflate
 {"jobId":5,"jobTitle":"Software Engg - 2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron","Google"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Jenkins"]}]}
 
-11:39:11.719 [main] DEBUG com.intuit.karate - response time in milliseconds: 5
+21:39:28.132 [main] DEBUG com.intuit.karate - response time in milliseconds: 8
 1 < 201
 1 < X-Content-Type-Options: nosniff
 1 < X-XSS-Protection: 1; mode=block
@@ -842,22 +566,362 @@
 1 < X-Frame-Options: DENY
 1 < Content-Type: application/json
 1 < Transfer-Encoding: chunked
-1 < Date: Wed, 15 Apr 2026 06:09:11 GMT
+1 < Date: Thu, 16 Apr 2026 16:09:27 GMT
 1 < Keep-Alive: timeout=60
 1 < Connection: keep-alive
 {"jobId":5,"jobTitle":"Software Engg - 2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron","Google"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Jenkins"]}]}
 
-11:39:11.725 [main] INFO  com.intuit.karate - karate.env system property was: null 
-11:39:11.728 [main] DEBUG com.intuit.karate - request:
-1 > GET http://localhost:9897/normal/webapi/all
+21:39:28.137 [main] INFO  com.intuit.karate - [print] {
+  "jobId": 5,
+  "jobTitle": "Software Engg - 2",
+  "jobDescription": "To develop andriod application",
+  "experience": [
+    "Google",
+    "Apple",
+    "Mobile Iron",
+    "Google"
+  ],
+  "project": [
+    {
+      "projectName": "Movie App",
+      "technology": [
+        "Kotlin",
+        "SQL Lite",
+        "Gradle",
+        "Jenkins"
+      ]
+    }
+  ]
+}
+ 
+21:39:28.152 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:9897/normal/webapi/add
 1 > Accept: application/json
+1 > Content-Type: application/xml; charset=UTF-8
+1 > Content-Length: 504
 1 > Host: localhost:9897
 1 > Connection: Keep-Alive
 1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.10)
 1 > Accept-Encoding: gzip,deflate
+<item><jobId>7</jobId><jobTitle>Software Engg</jobTitle><jobDescription>To develop andriod application</jobDescription><experience><experience>Google</experience><experience>Apple</experience><experience>Mobile Iron</experience><experience>Subex</experience></experience><project><project><projectName>Movie App</projectName><technology><technology>Kotlin</technology><technology>SQL Lite</technology><technology>Gradle</technology><technology>Jenkins</technology></technology></project></project></item>
 
+21:39:28.162 [main] DEBUG com.intuit.karate - response time in milliseconds: 8
+1 < 201
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Pragma: no-cache
+1 < Expires: 0
+1 < X-Frame-Options: DENY
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Thu, 16 Apr 2026 16:09:27 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"jobId":7,"jobTitle":"Software Engg","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron","Subex"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Jenkins"]}]}
 
-11:39:11.734 [main] DEBUG com.intuit.karate - response time in milliseconds: 5
+21:39:28.165 [main] INFO  com.intuit.karate - [print] {
+  "jobId": 7,
+  "jobTitle": "Software Engg",
+  "jobDescription": "To develop andriod application",
+  "experience": [
+    "Google",
+    "Apple",
+    "Mobile Iron",
+    "Subex"
+  ],
+  "project": [
+    {
+      "projectName": "Movie App",
+      "technology": [
+        "Kotlin",
+        "SQL Lite",
+        "Gradle",
+        "Jenkins"
+      ]
+    }
+  ]
+}
+ 
+21:39:28.178 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:9897/normal/webapi/add
+1 > Accept: application/xml
+1 > Content-Type: application/xml; charset=UTF-8
+1 > Content-Length: 504
+1 > Host: localhost:9897
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.10)
+1 > Accept-Encoding: gzip,deflate
+<item><jobId>7</jobId><jobTitle>Software Engg</jobTitle><jobDescription>To develop andriod application</jobDescription><experience><experience>Google</experience><experience>Apple</experience><experience>Mobile Iron</experience><experience>Subex</experience></experience><project><project><projectName>Movie App</projectName><technology><technology>Kotlin</technology><technology>SQL Lite</technology><technology>Gradle</technology><technology>Jenkins</technology></technology></project></project></item>
+
+21:39:28.192 [main] DEBUG com.intuit.karate - response time in milliseconds: 11
+1 < 201
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Pragma: no-cache
+1 < Expires: 0
+1 < X-Frame-Options: DENY
+1 < Content-Type: application/xml
+1 < Transfer-Encoding: chunked
+1 < Date: Thu, 16 Apr 2026 16:09:27 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+<Job><jobId>7</jobId><jobTitle>Software Engg</jobTitle><jobDescription>To develop andriod application</jobDescription><experience><experience>Google</experience><experience>Apple</experience><experience>Mobile Iron</experience><experience>Subex</experience></experience><project><project><projectName>Movie App</projectName><technology><technology>Kotlin</technology><technology>SQL Lite</technology><technology>Gradle</technology><technology>Jenkins</technology></technology></project></project></Job>
+
+21:39:28.200 [main] INFO  com.intuit.karate - [print] <Job>
+  <jobId>7</jobId>
+  <jobTitle>Software Engg</jobTitle>
+  <jobDescription>To develop andriod application</jobDescription>
+  <experience>
+    <experience>Google</experience>
+    <experience>Apple</experience>
+    <experience>Mobile Iron</experience>
+    <experience>Subex</experience>
+  </experience>
+  <project>
+    <project>
+      <projectName>Movie App</projectName>
+      <technology>
+        <technology>Kotlin</technology>
+        <technology>SQL Lite</technology>
+        <technology>Gradle</technology>
+        <technology>Jenkins</technology>
+      </technology>
+    </project>
+  </project>
+</Job>
+ 
+21:39:28.219 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:9897/normal/webapi/add
+1 > Accept: application/json
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 241
+1 > Host: localhost:9897
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.10)
+1 > Accept-Encoding: gzip,deflate
+{"jobId":5,"jobTitle":"Software Engg - 2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron","Google"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Jenkins"]}]}
+
+21:39:28.230 [main] DEBUG com.intuit.karate - response time in milliseconds: 9
+1 < 201
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Pragma: no-cache
+1 < Expires: 0
+1 < X-Frame-Options: DENY
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Thu, 16 Apr 2026 16:09:27 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"jobId":5,"jobTitle":"Software Engg - 2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron","Google"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Jenkins"]}]}
+
+21:39:28.234 [main] INFO  com.intuit.karate - [print] {
+  "jobId": 5,
+  "jobTitle": "Software Engg - 2",
+  "jobDescription": "To develop andriod application",
+  "experience": [
+    "Google",
+    "Apple",
+    "Mobile Iron",
+    "Google"
+  ],
+  "project": [
+    {
+      "projectName": "Movie App",
+      "technology": [
+        "Kotlin",
+        "SQL Lite",
+        "Gradle",
+        "Jenkins"
+      ]
+    }
+  ]
+}
+ 
+21:39:28.258 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:9897/normal/webapi/add
+1 > Accept: application/json
+1 > Content-Type: application/xml; charset=UTF-8
+1 > Content-Length: 590
+1 > Host: localhost:9897
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.10)
+1 > Accept-Encoding: gzip,deflate
+<item>
+	<jobId>7</jobId>
+	<jobTitle>Software Engg</jobTitle>
+	<jobDescription>To develop andriod application</jobDescription>
+	<experience>
+		<experience>Google</experience>
+		<experience>Apple</experience>
+		<experience>Mobile Iron</experience>
+		<experience>Subex</experience>
+	</experience>
+	<project>
+		<project>
+			<projectName>Movie App</projectName>
+			<technology>
+				<technology>Kotlin</technology>
+				<technology>SQL Lite</technology>
+				<technology>Gradle</technology>
+				<technology>Jenkins</technology>
+			</technology>
+		</project>
+	</project>
+</item>
+
+21:39:28.268 [main] DEBUG com.intuit.karate - response time in milliseconds: 8
+1 < 201
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Pragma: no-cache
+1 < Expires: 0
+1 < X-Frame-Options: DENY
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Thu, 16 Apr 2026 16:09:27 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"jobId":7,"jobTitle":"Software Engg","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron","Subex"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Jenkins"]}]}
+
+21:39:28.271 [main] INFO  com.intuit.karate - [print] {
+  "jobId": 7,
+  "jobTitle": "Software Engg",
+  "jobDescription": "To develop andriod application",
+  "experience": [
+    "Google",
+    "Apple",
+    "Mobile Iron",
+    "Subex"
+  ],
+  "project": [
+    {
+      "projectName": "Movie App",
+      "technology": [
+        "Kotlin",
+        "SQL Lite",
+        "Gradle",
+        "Jenkins"
+      ]
+    }
+  ]
+}
+ 
+21:39:28.283 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:9897/normal/webapi/add
+1 > Accept: application/json
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 242
+1 > Host: localhost:9897
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.10)
+1 > Accept-Encoding: gzip,deflate
+{"jobId":71,"jobTitle":"Software Engg - 2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron","Google"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Jenkins"]}]}
+
+21:39:28.293 [main] DEBUG com.intuit.karate - response time in milliseconds: 8
+1 < 201
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Pragma: no-cache
+1 < Expires: 0
+1 < X-Frame-Options: DENY
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Thu, 16 Apr 2026 16:09:27 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"jobId":71,"jobTitle":"Software Engg - 2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron","Google"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Jenkins"]}]}
+
+21:39:28.296 [main] INFO  com.intuit.karate - [print] {
+  "jobId": 71,
+  "jobTitle": "Software Engg - 2",
+  "jobDescription": "To develop andriod application",
+  "experience": [
+    "Google",
+    "Apple",
+    "Mobile Iron",
+    "Google"
+  ],
+  "project": [
+    {
+      "projectName": "Movie App",
+      "technology": [
+        "Kotlin",
+        "SQL Lite",
+        "Gradle",
+        "Jenkins"
+      ]
+    }
+  ]
+}
+ 
+21:39:28.314 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:9897/normal/webapi/add
+1 > Accept: application/json
+1 > Content-Type: application/xml; charset=UTF-8
+1 > Content-Length: 505
+1 > Host: localhost:9897
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.10)
+1 > Accept-Encoding: gzip,deflate
+<item><jobId>23</jobId><jobTitle>Software Engg</jobTitle><jobDescription>To develop andriod application</jobDescription><experience><experience>Google</experience><experience>Apple</experience><experience>Mobile Iron</experience><experience>Subex</experience></experience><project><project><projectName>Movie App</projectName><technology><technology>Kotlin</technology><technology>SQL Lite</technology><technology>Gradle</technology><technology>Jenkins</technology></technology></project></project></item>
+
+21:39:28.326 [main] DEBUG com.intuit.karate - response time in milliseconds: 11
+1 < 201
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Pragma: no-cache
+1 < Expires: 0
+1 < X-Frame-Options: DENY
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Thu, 16 Apr 2026 16:09:27 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"jobId":23,"jobTitle":"Software Engg","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron","Subex"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Jenkins"]}]}
+
+21:39:28.328 [main] INFO  com.intuit.karate - [print] {
+  "jobId": 23,
+  "jobTitle": "Software Engg",
+  "jobDescription": "To develop andriod application",
+  "experience": [
+    "Google",
+    "Apple",
+    "Mobile Iron",
+    "Subex"
+  ],
+  "project": [
+    {
+      "projectName": "Movie App",
+      "technology": [
+        "Kotlin",
+        "SQL Lite",
+        "Gradle",
+        "Jenkins"
+      ]
+    }
+  ]
+}
+ 
+21:39:28.335 [main] INFO  com.intuit.karate - [print] Calling Feature == >  23 
+21:39:28.341 [main] DEBUG com.intuit.karate - request:
+1 > PUT http://localhost:9897/normal/webapi/update
+1 > Accept: application/json
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 344
+1 > Host: localhost:9897
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.10)
+1 > Accept-Encoding: gzip,deflate
+{"jobId":23,"jobTitle":"Software Engg - 3","jobDescription":"To develop andriod application and Web Application","experience":["Google","Apple","Mobile Iron","Google"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Jenkins"]},{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Jenkins"]}]}
+
+21:39:28.351 [main] DEBUG com.intuit.karate - response time in milliseconds: 8
 1 < 200
 1 < X-Content-Type-Options: nosniff
 1 < X-XSS-Protection: 1; mode=block
@@ -867,10 +931,446 @@
 1 < X-Frame-Options: DENY
 1 < Content-Type: application/json
 1 < Transfer-Encoding: chunked
-1 < Date: Wed, 15 Apr 2026 06:09:11 GMT
+1 < Date: Thu, 16 Apr 2026 16:09:27 GMT
 1 < Keep-Alive: timeout=60
 1 < Connection: keep-alive
-[{"jobId":1,"jobTitle":"Software Engg","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle"]}]},{"jobId":5,"jobTitle":"Software Engg - 2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron","Google"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Jenkins"]}]},{"jobId":7,"jobTitle":"Software Engg","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron","Subex"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Jenkins"]}]},{"jobId":7,"jobTitle":"Software Engg","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron","Subex"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Jenkins"]}]},{"jobId":5,"jobTitle":"Software Engg - 2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron","Google"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Jenkins"]}]},{"jobId":7,"jobTitle":"Software Engg","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron","Subex"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Jenkins"]}]},{"jobId":89,"jobTitle":"Software Engg - 2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron","Google"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Jenkins"]}]},{"jobId":67,"jobTitle":"Software Engg","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron","Subex"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Jenkins"]}]},{"jobId":5,"jobTitle":"Software Engg - 2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron","Google"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Jenkins"]}]}]
+{"jobId":23,"jobTitle":"Software Engg - 3","jobDescription":"To develop andriod application and Web Application","experience":["Google","Apple","Mobile Iron","Google"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Jenkins"]},{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Jenkins"]}]}
 
-11:39:11.799 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 9 of 9 (0 remaining) classpath:postRequest/featurefiles/schemaValidation.feature
-11:39:11.802 [main] DEBUG com.intuit.karate.Suite - waiting for 9 features to complete
+21:39:28.358 [main] INFO  com.intuit.karate - [print] [
+  [
+    {
+      "projectName": "Movie App",
+      "technology": [
+        "Kotlin",
+        "SQL Lite",
+        "Gradle",
+        "Jenkins"
+      ]
+    },
+    {
+      "projectName": "Movie App",
+      "technology": [
+        "Kotlin",
+        "SQL Lite",
+        "Gradle",
+        "Jenkins"
+      ]
+    }
+  ]
+]
+ 
+21:39:28.374 [main] INFO  com.intuit.karate - karate.env system property was: null 
+21:39:28.398 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:9897/normal/webapi/add
+1 > Accept: application/json
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 241
+1 > Host: localhost:9897
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.10)
+1 > Accept-Encoding: gzip,deflate
+{"jobId":5,"jobTitle":"Software Engg - 2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron","Google"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Jenkins"]}]}
+
+21:39:28.408 [main] DEBUG com.intuit.karate - response time in milliseconds: 10
+1 < 201
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Pragma: no-cache
+1 < Expires: 0
+1 < X-Frame-Options: DENY
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Thu, 16 Apr 2026 16:09:27 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"jobId":5,"jobTitle":"Software Engg - 2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron","Google"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Jenkins"]}]}
+
+21:39:28.412 [main] INFO  com.intuit.karate - [print] {
+  "jobId": 5,
+  "jobTitle": "Software Engg - 2",
+  "jobDescription": "To develop andriod application",
+  "experience": [
+    "Google",
+    "Apple",
+    "Mobile Iron",
+    "Google"
+  ],
+  "project": [
+    {
+      "projectName": "Movie App",
+      "technology": [
+        "Kotlin",
+        "SQL Lite",
+        "Gradle",
+        "Jenkins"
+      ]
+    }
+  ]
+}
+ 
+21:39:28.427 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:9897/normal/webapi/add
+1 > Accept: application/json
+1 > Content-Type: application/xml; charset=UTF-8
+1 > Content-Length: 504
+1 > Host: localhost:9897
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.10)
+1 > Accept-Encoding: gzip,deflate
+<item><jobId>7</jobId><jobTitle>Software Engg</jobTitle><jobDescription>To develop andriod application</jobDescription><experience><experience>Google</experience><experience>Apple</experience><experience>Mobile Iron</experience><experience>Subex</experience></experience><project><project><projectName>Movie App</projectName><technology><technology>Kotlin</technology><technology>SQL Lite</technology><technology>Gradle</technology><technology>Jenkins</technology></technology></project></project></item>
+
+21:39:28.437 [main] DEBUG com.intuit.karate - response time in milliseconds: 7
+1 < 201
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Pragma: no-cache
+1 < Expires: 0
+1 < X-Frame-Options: DENY
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Thu, 16 Apr 2026 16:09:27 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"jobId":7,"jobTitle":"Software Engg","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron","Subex"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Jenkins"]}]}
+
+21:39:28.440 [main] INFO  com.intuit.karate - [print] {
+  "jobId": 7,
+  "jobTitle": "Software Engg",
+  "jobDescription": "To develop andriod application",
+  "experience": [
+    "Google",
+    "Apple",
+    "Mobile Iron",
+    "Subex"
+  ],
+  "project": [
+    {
+      "projectName": "Movie App",
+      "technology": [
+        "Kotlin",
+        "SQL Lite",
+        "Gradle",
+        "Jenkins"
+      ]
+    }
+  ]
+}
+ 
+21:39:28.454 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:9897/normal/webapi/add
+1 > Accept: application/xml
+1 > Content-Type: application/xml; charset=UTF-8
+1 > Content-Length: 504
+1 > Host: localhost:9897
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.10)
+1 > Accept-Encoding: gzip,deflate
+<item><jobId>7</jobId><jobTitle>Software Engg</jobTitle><jobDescription>To develop andriod application</jobDescription><experience><experience>Google</experience><experience>Apple</experience><experience>Mobile Iron</experience><experience>Subex</experience></experience><project><project><projectName>Movie App</projectName><technology><technology>Kotlin</technology><technology>SQL Lite</technology><technology>Gradle</technology><technology>Jenkins</technology></technology></project></project></item>
+
+21:39:28.466 [main] DEBUG com.intuit.karate - response time in milliseconds: 12
+1 < 201
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Pragma: no-cache
+1 < Expires: 0
+1 < X-Frame-Options: DENY
+1 < Content-Type: application/xml
+1 < Transfer-Encoding: chunked
+1 < Date: Thu, 16 Apr 2026 16:09:27 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+<Job><jobId>7</jobId><jobTitle>Software Engg</jobTitle><jobDescription>To develop andriod application</jobDescription><experience><experience>Google</experience><experience>Apple</experience><experience>Mobile Iron</experience><experience>Subex</experience></experience><project><project><projectName>Movie App</projectName><technology><technology>Kotlin</technology><technology>SQL Lite</technology><technology>Gradle</technology><technology>Jenkins</technology></technology></project></project></Job>
+
+21:39:28.471 [main] INFO  com.intuit.karate - [print] <Job>
+  <jobId>7</jobId>
+  <jobTitle>Software Engg</jobTitle>
+  <jobDescription>To develop andriod application</jobDescription>
+  <experience>
+    <experience>Google</experience>
+    <experience>Apple</experience>
+    <experience>Mobile Iron</experience>
+    <experience>Subex</experience>
+  </experience>
+  <project>
+    <project>
+      <projectName>Movie App</projectName>
+      <technology>
+        <technology>Kotlin</technology>
+        <technology>SQL Lite</technology>
+        <technology>Gradle</technology>
+        <technology>Jenkins</technology>
+      </technology>
+    </project>
+  </project>
+</Job>
+ 
+21:39:28.489 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:9897/normal/webapi/add
+1 > Accept: application/json
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 241
+1 > Host: localhost:9897
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.10)
+1 > Accept-Encoding: gzip,deflate
+{"jobId":5,"jobTitle":"Software Engg - 2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron","Google"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Jenkins"]}]}
+
+21:39:28.500 [main] DEBUG com.intuit.karate - response time in milliseconds: 10
+1 < 201
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Pragma: no-cache
+1 < Expires: 0
+1 < X-Frame-Options: DENY
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Thu, 16 Apr 2026 16:09:27 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"jobId":5,"jobTitle":"Software Engg - 2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron","Google"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Jenkins"]}]}
+
+21:39:28.501 [main] INFO  com.intuit.karate - [print] {
+  "jobId": 5,
+  "jobTitle": "Software Engg - 2",
+  "jobDescription": "To develop andriod application",
+  "experience": [
+    "Google",
+    "Apple",
+    "Mobile Iron",
+    "Google"
+  ],
+  "project": [
+    {
+      "projectName": "Movie App",
+      "technology": [
+        "Kotlin",
+        "SQL Lite",
+        "Gradle",
+        "Jenkins"
+      ]
+    }
+  ]
+}
+ 
+21:39:28.518 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:9897/normal/webapi/add
+1 > Accept: application/json
+1 > Content-Type: application/xml; charset=UTF-8
+1 > Content-Length: 590
+1 > Host: localhost:9897
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.10)
+1 > Accept-Encoding: gzip,deflate
+<item>
+	<jobId>7</jobId>
+	<jobTitle>Software Engg</jobTitle>
+	<jobDescription>To develop andriod application</jobDescription>
+	<experience>
+		<experience>Google</experience>
+		<experience>Apple</experience>
+		<experience>Mobile Iron</experience>
+		<experience>Subex</experience>
+	</experience>
+	<project>
+		<project>
+			<projectName>Movie App</projectName>
+			<technology>
+				<technology>Kotlin</technology>
+				<technology>SQL Lite</technology>
+				<technology>Gradle</technology>
+				<technology>Jenkins</technology>
+			</technology>
+		</project>
+	</project>
+</item>
+
+21:39:28.529 [main] DEBUG com.intuit.karate - response time in milliseconds: 10
+1 < 201
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Pragma: no-cache
+1 < Expires: 0
+1 < X-Frame-Options: DENY
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Thu, 16 Apr 2026 16:09:27 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"jobId":7,"jobTitle":"Software Engg","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron","Subex"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Jenkins"]}]}
+
+21:39:28.532 [main] INFO  com.intuit.karate - [print] {
+  "jobId": 7,
+  "jobTitle": "Software Engg",
+  "jobDescription": "To develop andriod application",
+  "experience": [
+    "Google",
+    "Apple",
+    "Mobile Iron",
+    "Subex"
+  ],
+  "project": [
+    {
+      "projectName": "Movie App",
+      "technology": [
+        "Kotlin",
+        "SQL Lite",
+        "Gradle",
+        "Jenkins"
+      ]
+    }
+  ]
+}
+ 
+21:39:28.544 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:9897/normal/webapi/add
+1 > Accept: application/json
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 242
+1 > Host: localhost:9897
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.10)
+1 > Accept-Encoding: gzip,deflate
+{"jobId":83,"jobTitle":"Software Engg - 2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron","Google"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Jenkins"]}]}
+
+21:39:28.553 [main] DEBUG com.intuit.karate - response time in milliseconds: 8
+1 < 201
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Pragma: no-cache
+1 < Expires: 0
+1 < X-Frame-Options: DENY
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Thu, 16 Apr 2026 16:09:27 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"jobId":83,"jobTitle":"Software Engg - 2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron","Google"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Jenkins"]}]}
+
+21:39:28.556 [main] INFO  com.intuit.karate - [print] {
+  "jobId": 83,
+  "jobTitle": "Software Engg - 2",
+  "jobDescription": "To develop andriod application",
+  "experience": [
+    "Google",
+    "Apple",
+    "Mobile Iron",
+    "Google"
+  ],
+  "project": [
+    {
+      "projectName": "Movie App",
+      "technology": [
+        "Kotlin",
+        "SQL Lite",
+        "Gradle",
+        "Jenkins"
+      ]
+    }
+  ]
+}
+ 
+21:39:28.571 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:9897/normal/webapi/add
+1 > Accept: application/json
+1 > Content-Type: application/xml; charset=UTF-8
+1 > Content-Length: 505
+1 > Host: localhost:9897
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.10)
+1 > Accept-Encoding: gzip,deflate
+<item><jobId>90</jobId><jobTitle>Software Engg</jobTitle><jobDescription>To develop andriod application</jobDescription><experience><experience>Google</experience><experience>Apple</experience><experience>Mobile Iron</experience><experience>Subex</experience></experience><project><project><projectName>Movie App</projectName><technology><technology>Kotlin</technology><technology>SQL Lite</technology><technology>Gradle</technology><technology>Jenkins</technology></technology></project></project></item>
+
+21:39:28.583 [main] DEBUG com.intuit.karate - response time in milliseconds: 11
+1 < 201
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Pragma: no-cache
+1 < Expires: 0
+1 < X-Frame-Options: DENY
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Thu, 16 Apr 2026 16:09:27 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"jobId":90,"jobTitle":"Software Engg","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron","Subex"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Jenkins"]}]}
+
+21:39:28.586 [main] INFO  com.intuit.karate - [print] {
+  "jobId": 90,
+  "jobTitle": "Software Engg",
+  "jobDescription": "To develop andriod application",
+  "experience": [
+    "Google",
+    "Apple",
+    "Mobile Iron",
+    "Subex"
+  ],
+  "project": [
+    {
+      "projectName": "Movie App",
+      "technology": [
+        "Kotlin",
+        "SQL Lite",
+        "Gradle",
+        "Jenkins"
+      ]
+    }
+  ]
+}
+ 
+21:39:28.592 [main] INFO  com.intuit.karate - [print] Calling Feature == >  27 
+21:39:28.597 [main] DEBUG com.intuit.karate - request:
+1 > PUT http://localhost:9897/normal/webapi/update
+1 > Accept: application/json
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 344
+1 > Host: localhost:9897
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.10)
+1 > Accept-Encoding: gzip,deflate
+{"jobId":27,"jobTitle":"Software Engg - 3","jobDescription":"To develop andriod application and Web Application","experience":["Google","Apple","Mobile Iron","Google"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Jenkins"]},{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Jenkins"]}]}
+
+21:39:28.606 [main] DEBUG com.intuit.karate - response time in milliseconds: 9
+1 < 200
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Pragma: no-cache
+1 < Expires: 0
+1 < X-Frame-Options: DENY
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Thu, 16 Apr 2026 16:09:27 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"jobId":27,"jobTitle":"Software Engg - 3","jobDescription":"To develop andriod application and Web Application","experience":["Google","Apple","Mobile Iron","Google"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Jenkins"]},{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle","Jenkins"]}]}
+
+21:39:28.611 [main] INFO  com.intuit.karate - [print] [
+  [
+    {
+      "projectName": "Movie App",
+      "technology": [
+        "Kotlin",
+        "SQL Lite",
+        "Gradle",
+        "Jenkins"
+      ]
+    },
+    {
+      "projectName": "Movie App",
+      "technology": [
+        "Kotlin",
+        "SQL Lite",
+        "Gradle",
+        "Jenkins"
+      ]
+    }
+  ]
+]
+ 

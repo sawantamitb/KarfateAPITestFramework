@@ -1,4 +1,4 @@
-package runner;
+package getRequest.runner;
 
 
 import com.intuit.karate.junit5.Karate;

@@ -1,6 +1,9 @@
 postRequest\runner\TestJsonPathRunner.class
-getRequest\runner\ParallelRunnerTest.class
 getRequest\runner\TestGetRunner.class
 postRequest\runner\TestPostRunner.class
-suiterunner\TestSuiteRunner.class
+datadriven\runner\TestDataDrivenRunnerJson.class
 postRequest\runner\TestJavaScriptRunner.class
+suiterunner\ParallelRunnerTest.class
+putrequest\runner\TestPutRunner.class
+datadriven\runner\TestDataDrivenRunner.class
+fileupload\runner\TestFileUploadRunner.class
