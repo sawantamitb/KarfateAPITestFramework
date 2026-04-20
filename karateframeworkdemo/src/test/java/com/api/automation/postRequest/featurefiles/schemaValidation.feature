@@ -6,7 +6,7 @@ Feature: Validate the JSON schema
 
   Scenario: To create the Job Entry in JSON format
     Given path '/normal/webapi/add'
-    * def body = read('classpath:com/api/automation/datafiles/jobEntry.json')
+    * def body = read('classpath:datafiles/jobEntry.json')
     And request body
     And headers {Accept : 'application/json', Content-Type: 'application/json'}
     When method post

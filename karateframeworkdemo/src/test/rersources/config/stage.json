@@ -1,0 +1,7 @@
+{
+  "baseUrl": "http://localhost:9897",
+  "username": "stageadmin",
+  "password": "stagewelcome",
+  "wiremockport": "9898",
+  "wiremockurl": "http://localhost:9898"
+}

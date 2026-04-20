@@ -1,8 +1,9 @@
 Feature: To create job description in the test application
 
   Background: Read the data for data driven
-    * def testdata = read("classpath:com/api/automation/datafiles/testData.csv")
     * url baseUrl
+    * def testdata = read("classpath:datafiles/testData.csv")
+   
 
   Scenario Outline: To create job description in the test application <method>
     Given print '<url>'
@@ -17,8 +18,7 @@ Feature: To create job description in the test application
       | http://localhost:9897 | /normal/webapi/add | put    |    201 |
 
   Scenario Outline: Data Driven for the job description entry - <jobId>
-    Given url baseUrl
-    And path '/normal/webapi/add'
+    Given path '/normal/webapi/add'
     And request {  "jobId": '#(jobId)',"jobTitle": '#(jobTitle)', "jobDescription": '#(jobDescription)', "experience": [ "Google", "Apple", "Mobile Iron", "Google" ], "project": [ { "projectName": "Movie App", "technology": [ "Kotlin", "SQL Lite","Gradle", "Jenkins" ] } ]}
     And headers {Accept : 'application/json', Content-Type: 'application/json'}
     When method post
@@ -31,8 +31,7 @@ Feature: To create job description in the test application
       | false | Software Engg - 2 | To develop andriod application |    400 |
 
   Scenario Outline: Data Driven for the job description entry using csv files - <jobId>
-    Given url baseUrl
-    And path '/normal/webapi/add'
+    Given path '/normal/webapi/add'
     And request {  "jobId": '#(jobId)',"jobTitle": '#(jobTitle)', "jobDescription": '#(jobDescription)', "experience": [ "Google", "Apple", "Mobile Iron", "Google" ], "project": [ { "projectName": "Movie App", "technology": [ "Kotlin", "SQL Lite","Gradle", "Jenkins" ] } ]}
     And headers {Accept : 'application/json', Content-Type: 'application/json'}
     When method post
@@ -40,4 +39,4 @@ Feature: To create job description in the test application
 
     Examples: 
       #|testdata|
-      | read('classpath:com/api/automation/datafiles/testData.csv') |
+      | read('classpath:datafiles/testData.csv') |

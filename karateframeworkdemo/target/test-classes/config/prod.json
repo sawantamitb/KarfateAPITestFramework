@@ -1,0 +1,7 @@
+{
+  "baseUrl": "http://localhost:9897",
+  "username": "prodadmin",
+  "password": "prodwelcome",
+  "wiremockport": "9898",
+  "wiremockurl": "http://localhost:9898"
+}

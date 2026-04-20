@@ -1,7 +1,9 @@
 
 package com.api.automation.extentreport;
 
+import java.util.Collections;
 import java.util.List;
+import java.util.Set;
 import java.util.stream.Collectors;
 
 import com.aventstack.extentreports.ExtentReports;
@@ -31,6 +33,7 @@ public class CustomExtentReport {
 	private String featureTitle = "";
 	private ExtentTest scenarioNode;
 	private String scenarioTitle = "";
+	private Set<String> flakyScenarios = Collections.emptySet();
 
 	public CustomExtentReport() {
 		extentReports = new ExtentReports();
@@ -51,6 +54,11 @@ public class CustomExtentReport {
 		return this;
 	}
 
+	public CustomExtentReport withFlakyScenarios(Set<String> flakyScenarios) {
+		this.flakyScenarios = flakyScenarios != null ? flakyScenarios : Collections.emptySet();
+		return this;
+	}
+
 	public void generateExtentReport() {
 		// 1. Check for ReportDir and TestResults, if not present then throw Exception
 
@@ -58,6 +66,7 @@ public class CustomExtentReport {
 			extentSparkReporter = new ExtentSparkReporter(reportDir);
 			extentReports.attachReporter(extentSparkReporter);
 			setConfig();
+			extentReports.setSystemInfo("Flaky Tests", String.valueOf(flakyScenarios.size()));
 			// 2. Using the testReults, Get the list of scenario results
 			List<ScenarioResult> scenarioResults = getScenarioResults();
 			scenarioResults = scenarioResults.stream().filter((name) -> {
@@ -73,6 +82,9 @@ public class CustomExtentReport {
 				// 6. Using the same scenario object, we will get the info about the scenario
 				String scenarioTitle = getSecnarioTitle(scenarioResult);
 				ExtentTest scenarioNode = createScenarioNode(featureNode, scenarioTitle);
+				if (flakyScenarios.contains(featureName + "::" + scenarioTitle)) {
+					scenarioNode.assignCategory("Flaky");
+				}
 				// 7. Using the Scenario Result get the list of step result
 				// 8. loop over the step result list, get the info about scenario step and its
 				// execution status

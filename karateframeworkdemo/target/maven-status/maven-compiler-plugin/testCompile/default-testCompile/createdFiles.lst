@@ -4,8 +4,12 @@ com\api\automation\extentreport\logger\MaskLogger.class
 com\api\automation\postRequest\runner\TestJavaScriptRunner.class
 com\api\automation\datadriven\runner\TestDataDrivenRunner.class
 com\api\automation\postRequest\runner\TestJsonPathRunner.class
+com\api\automation\utils\ConfigReader.class
 com\api\automation\ParalleRunnerWithExtentReport.class
+com\api\automation\utils\WireMockManager.class
 com\api\automation\extentreport\CustomExtentReport.class
+com\api\automation\ParallelBuilderWithCucumberReport.class
 com\api\automation\putrequest\runner\TestPutRunner.class
 com\api\automation\postRequest\runner\TestPostRunner.class
 com\api\automation\fileupload\runner\TestFileUploadRunner.class
+com\api\automation\mocks\runner\WireMockRunner.class

@@ -4,4 +4,4 @@ Feature: To create job description in the test application
     * print "Testing ==> ", __row
     
     Examples:
-      | read("classpath:com/api/automation/datafiles/jsonData.json") |
+      | read("classpath:datafiles/jsonData.json") |

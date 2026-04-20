@@ -33,7 +33,7 @@ Feature: To create the Job entry in the application
 
   Scenario: To create the Job Entry in JSON format
     Given path '/normal/webapi/add'
-    * def body = read('classpath:com/api/automation/datafiles/jobEntry.json')
+    * def body = read('classpath:datafiles/jobEntry.json')
     And request body
     And headers {Accept : 'application/json', Content-Type: 'application/json'}
     When method post
@@ -43,7 +43,7 @@ Feature: To create the Job entry in the application
 
   Scenario: To create the Job Entry using XML request body formt
     Given path '/normal/webapi/add'
-    * def body = read('classpath:com/api/automation/datafiles/jobEntry.xml')
+    * def body = read('classpath:datafiles/jobEntry.xml')
     And request body
     And headers {Accept : 'application/json', Content-Type: 'application/xml'}
     When method post

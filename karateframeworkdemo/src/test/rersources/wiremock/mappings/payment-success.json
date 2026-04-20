@@ -1,0 +1,10 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "/payment/status"
+  },
+  "response": {
+    "status": 200,
+    "bodyFileName": "success.json"
+  }
+}

@@ -2,7 +2,7 @@ Feature: To validate the GET End response from file
   To validate the get end point response from extenal file
 
   Background: Setup the base url
-        * url baseUrl
+    * url baseUrl
 
   Scenario: To get the data in JSON format and validate from file
     Given path '/normal/webapi/all'
@@ -10,7 +10,7 @@ Feature: To validate the GET End response from file
     When method get
     Then status 200
     # Create a variable to store the data from external file
-    * def actualResponse = read('classpath:com/api/automation/datafiles/JsonResponse.json')
+    * def actualResponse = read('classpath:datafiles/JsonResponse.json')
     And print "File ==> ", actualResponse
     And match response[0] == actualResponse[0]
 
@@ -20,7 +20,7 @@ Feature: To validate the GET End response from file
     When method get
     Then status 200
     # Create the variable to read the data from xml file
-    * def actualResponse = read('classpath:com/api/automation/datafiles/XmlResponse.xml')
+    * def actualResponse = read('classpath:datafiles/XmlResponse.xml')
     * def expectedItem = karate.xmlPath(actualResponse, '/List/item')
     And print "Xml Response ==> ", actualResponse
     And match response/List/item[1] == expectedItem

@@ -2,7 +2,7 @@ Feature: To validate the GET End point
   To validate the get end point response
 
   Background: Setup the base url
-    Given url baseUrl
+    * url baseUrl
 
   Scenario: To get the data in JSON format
     Given path '/normal/webapi/all'

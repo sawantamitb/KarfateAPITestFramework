@@ -1,0 +1,10 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "/payment/status?type=fail"
+  },
+  "response": {
+    "status": 500,
+    "bodyFileName": "failure.json"
+  }
+}
