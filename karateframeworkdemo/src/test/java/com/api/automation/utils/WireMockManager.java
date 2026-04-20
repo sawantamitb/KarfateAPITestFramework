@@ -18,7 +18,7 @@ public class WireMockManager {
         server = new WireMockServer(
             options()
                 .port(port)
-                .usingFilesUnderClasspath("wiremock")
+                .usingFilesUnderClasspath("datafiles/wiremock")
         );
         server.start();
         System.out.println("WireMock started on port " + port + " [url: " + wiremockUrl + "]");

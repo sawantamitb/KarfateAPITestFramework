@@ -37,7 +37,7 @@ public class ParalleRunnerWithExtentReport {
 	public void executeKarateTest() {
 		logger.info("=== Starting Karate Test Suite (First Run) ===");
 
-		Results result = runSuite(null, 1);
+		Results result = runSuite(null, 2);
 		logger.debug("First run completed - Total: {},Total: {}, Passed: {}, Failed: {}",
 				result.getScenariosTotal(), result.getScenariosPassed(), result.getScenariosFailed());
 		
@@ -59,7 +59,7 @@ public class ParalleRunnerWithExtentReport {
 		logger.warn("First run failed with {} failure(s). Retry triggered.", result.getFailCount());
 		logger.info("=== Re-running same suite (Retry Run) ===");
 
-		Results retryResult = runSuite("target/karate-reports-retry", 1);
+		Results retryResult = runSuite("target/karate-reports-retry", 2);
 		logger.debug("Retry run completed - Total: {}, Passed: {}, Failed: {}",
 				retryResult.getScenariosTotal(), retryResult.getScenariosPassed(), retryResult.getScenariosFailed());
 
@@ -85,7 +85,7 @@ public class ParalleRunnerWithExtentReport {
         
 		String tags = System.getProperty("karate.tags", "~@ignore");
 		Builder aRunner = new Builder();
-		aRunner.path("classpath:com/api/automation");
+		aRunner.path("classpath:featurefiles");
 		aRunner.tags(tags.split("\\|"));
 		aRunner.backupReportDir(false);
 		if (reportDirectory != null) {

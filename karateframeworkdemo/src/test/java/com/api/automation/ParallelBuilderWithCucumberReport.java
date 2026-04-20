@@ -28,7 +28,7 @@ public class ParallelBuilderWithCucumberReport {
 	public void executeKarateTest() throws Exception {
 		String tags = System.getProperty("karate.tags", "~@ignore");
 		Builder aRunner = new Builder();
-		aRunner.path("classpath:com/api/automation");
+		aRunner.path("classpath:featurefiles");
 		aRunner.tags(tags.split("\\|"));
 		Results result = aRunner.parallel(1);
 

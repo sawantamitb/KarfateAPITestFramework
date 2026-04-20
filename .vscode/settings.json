@@ -1,4 +1,12 @@
 {
     "java.compile.nullAnalysis.mode": "automatic",
     "java.configuration.updateBuildConfiguration": "disabled"
+	 "mcpServers": {
+    "karate": {
+      "command": "C:/Program Files/nodejs/node.exe",
+      "args": [
+        "C:/Personal/Education/VisualStudio_Workspace/karate-mcp-server/dist/index.js"
+      ]
+    }
+  }
 }
