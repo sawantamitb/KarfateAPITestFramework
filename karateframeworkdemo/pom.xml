@@ -51,8 +51,8 @@
             <artifactId>karate-junit5</artifactId>
             <version>${karate.version}</version>
             <scope>test</scope>
-        </dependency>		
-    </dependencies>
+        </dependency>	
+     </dependencies>
 
     <build>
         <testResources>
@@ -80,9 +80,9 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>${maven.surefire.version}</version>
                 <configuration>
-                    <argLine>-Dfile.encoding=UTF-8</argLine>
+                    <argLine>-Dfile.encoding=UTF-8</argLine>                   
                 </configuration>
-            </plugin>          
+            </plugin>                     
         </plugins>        
     </build>       
     

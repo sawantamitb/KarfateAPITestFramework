@@ -1,0 +1,1475 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.capture("report_feature",{distinct_id:"b8ea13b8-5682-4b18-bf71-44dfb64cf21b",karate_version:"1.4.1",karate_meta:null});
+  }
+});
+</script>
+
+    <title>com.api.automation.getRequest.featurefiles.responseMatcher</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">4</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div></div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2026-04-19 02:22:11 pm</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:7]"><span>[1:7]</span> <span>To get the data in JSON format</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[2:37]"><span>[2:37]</span> <span>To get the data in xml format</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[3:67]"><span>[3:67]</span> <span>To get the data in JSON format and validate using negate condition</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[4:99]"><span>[4:99]</span> <span>To get the data in JSON format and validate a specific property</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">com/api/automation/getRequest/featurefiles/responseMatcher.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">To validate the GET End point</span>
+          <span class="feature-description">To validate the get end point response</span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:7]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:7]</span>
+                <span class="scenario-name">To get the data in JSON format</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>12</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:7]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:7]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.5">14:22:11.062 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref passed">8</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/normal/webapi/all&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref passed">9</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Accept = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref passed">10</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">8</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.10">14:22:11.065 request:
+1 &gt; GET http://localhost:9897/normal/webapi/all
+1 &gt; Accept: application/json
+1 &gt; Host: localhost:9897
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.10)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+14:22:11.072 response time in milliseconds: 6
+1 &lt; 200
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Date: Sun, 19 Apr 2026 08:52:10 GMT
+1 &lt; Keep-Alive: timeout=60
+1 &lt; Connection: keep-alive
+[{&quot;jobId&quot;:1,&quot;jobTitle&quot;:&quot;Software Engg&quot;,&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;],&quot;project&quot;:[{&quot;projectName&quot;:&quot;Movie App&quot;,&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;]}]},{&quot;jobId&quot;:9980,&quot;jobTitle&quot;:&quot;Software Engg - 2&quot;,&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;,&quot;Google&quot;],&quot;project&quot;:[{&quot;projectName&quot;:&quot;Movie App&quot;,&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Jenkins&quot;]}]},{&quot;jobId&quot;:9980,&quot;jobTitle&quot;:&quot;Software Engg - 2&quot;,&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;,&quot;Google&quot;],&quot;project&quot;:[{&quot;projectName&quot;:&quot;Movie App&quot;,&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Jenkins&quot;]}]}]
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.11">
+      <div class="step-ref passed">11</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.12">
+      <div class="step-ref passed">12</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.12">14:22:11.073 [print] [
+  {
+    &quot;jobId&quot;: 1,
+    &quot;jobTitle&quot;: &quot;Software Engg&quot;,
+    &quot;jobDescription&quot;: &quot;To develop andriod application&quot;,
+    &quot;experience&quot;: [
+      &quot;Google&quot;,
+      &quot;Apple&quot;,
+      &quot;Mobile Iron&quot;
+    ],
+    &quot;project&quot;: [
+      {
+        &quot;projectName&quot;: &quot;Movie App&quot;,
+        &quot;technology&quot;: [
+          &quot;Kotlin&quot;,
+          &quot;SQL Lite&quot;,
+          &quot;Gradle&quot;
+        ]
+      }
+    ]
+  },
+  {
+    &quot;jobId&quot;: 9980,
+    &quot;jobTitle&quot;: &quot;Software Engg - 2&quot;,
+    &quot;jobDescription&quot;: &quot;To develop andriod application&quot;,
+    &quot;experience&quot;: [
+      &quot;Google&quot;,
+      &quot;Apple&quot;,
+      &quot;Mobile Iron&quot;,
+      &quot;Google&quot;
+    ],
+    &quot;project&quot;: [
+      {
+        &quot;projectName&quot;: &quot;Movie App&quot;,
+        &quot;technology&quot;: [
+          &quot;Kotlin&quot;,
+          &quot;SQL Lite&quot;,
+          &quot;Gradle&quot;,
+          &quot;Jenkins&quot;
+        ]
+      }
+    ]
+  },
+  {
+    &quot;jobId&quot;: 9980,
+    &quot;jobTitle&quot;: &quot;Software Engg - 2&quot;,
+    &quot;jobDescription&quot;: &quot;To develop andriod application&quot;,
+    &quot;experience&quot;: [
+      &quot;Google&quot;,
+      &quot;Apple&quot;,
+      &quot;Mobile Iron&quot;,
+      &quot;Google&quot;
+    ],
+    &quot;project&quot;: [
+      {
+        &quot;projectName&quot;: &quot;Movie App&quot;,
+        &quot;technology&quot;: [
+          &quot;Kotlin&quot;,
+          &quot;SQL Lite&quot;,
+          &quot;Gradle&quot;,
+          &quot;Jenkins&quot;
+        ]
+      }
+    ]
+  }
+]
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.13">
+      <div class="step-ref passed">13</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response[0] ==</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.13">{
+&quot;jobId&quot;: 1,
+&quot;jobTitle&quot;: &quot;Software Engg&quot;,
+&quot;project&quot;: [
+  {
+    &quot;technology&quot;: [
+      &quot;Kotlin&quot;,
+      &quot;SQL Lite&quot;,
+      &quot;Gradle&quot;
+    ],
+    &quot;projectName&quot;: &quot;Movie App&quot;
+  }
+],
+&quot;jobDescription&quot;: &quot;To develop andriod application&quot;,
+&quot;experience&quot;: [
+  &quot;Google&quot;,
+  &quot;Apple&quot;,
+  &quot;Mobile Iron&quot;
+]
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2:37]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2:37]</span>
+                <span class="scenario-name">To get the data in xml format</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>72</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[2:37]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[2:37]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.5">14:22:11.080 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.38">
+      <div class="step-ref passed">38</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/normal/webapi/all&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.39">
+      <div class="step-ref passed">39</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Accept = &#39;application/xml&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.40">
+      <div class="step-ref passed">40</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">9</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.40">14:22:11.081 request:
+1 &gt; GET http://localhost:9897/normal/webapi/all
+1 &gt; Accept: application/xml
+1 &gt; Host: localhost:9897
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.10)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+14:22:11.086 response time in milliseconds: 5
+1 &lt; 200
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+1 &lt; Content-Type: application/xml
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Date: Sun, 19 Apr 2026 08:52:10 GMT
+1 &lt; Keep-Alive: timeout=60
+1 &lt; Connection: keep-alive
+&lt;List&gt;&lt;item&gt;&lt;jobId&gt;1&lt;/jobId&gt;&lt;jobTitle&gt;Software Engg&lt;/jobTitle&gt;&lt;jobDescription&gt;To develop andriod application&lt;/jobDescription&gt;&lt;experience&gt;&lt;experience&gt;Google&lt;/experience&gt;&lt;experience&gt;Apple&lt;/experience&gt;&lt;experience&gt;Mobile Iron&lt;/experience&gt;&lt;/experience&gt;&lt;project&gt;&lt;project&gt;&lt;projectName&gt;Movie App&lt;/projectName&gt;&lt;technology&gt;&lt;technology&gt;Kotlin&lt;/technology&gt;&lt;technology&gt;SQL Lite&lt;/technology&gt;&lt;technology&gt;Gradle&lt;/technology&gt;&lt;/technology&gt;&lt;/project&gt;&lt;/project&gt;&lt;/item&gt;&lt;item&gt;&lt;jobId&gt;9980&lt;/jobId&gt;&lt;jobTitle&gt;Software Engg - 2&lt;/jobTitle&gt;&lt;jobDescription&gt;To develop andriod application&lt;/jobDescription&gt;&lt;experience&gt;&lt;experience&gt;Google&lt;/experience&gt;&lt;experience&gt;Apple&lt;/experience&gt;&lt;experience&gt;Mobile Iron&lt;/experience&gt;&lt;experience&gt;Google&lt;/experience&gt;&lt;/experience&gt;&lt;project&gt;&lt;project&gt;&lt;projectName&gt;Movie App&lt;/projectName&gt;&lt;technology&gt;&lt;technology&gt;Kotlin&lt;/technology&gt;&lt;technology&gt;SQL Lite&lt;/technology&gt;&lt;technology&gt;Gradle&lt;/technology&gt;&lt;technology&gt;Jenkins&lt;/technology&gt;&lt;/technology&gt;&lt;/project&gt;&lt;/project&gt;&lt;/item&gt;&lt;item&gt;&lt;jobId&gt;9980&lt;/jobId&gt;&lt;jobTitle&gt;Software Engg - 2&lt;/jobTitle&gt;&lt;jobDescription&gt;To develop andriod application&lt;/jobDescription&gt;&lt;experience&gt;&lt;experience&gt;Google&lt;/experience&gt;&lt;experience&gt;Apple&lt;/experience&gt;&lt;experience&gt;Mobile Iron&lt;/experience&gt;&lt;experience&gt;Google&lt;/experience&gt;&lt;/experience&gt;&lt;project&gt;&lt;project&gt;&lt;projectName&gt;Movie App&lt;/projectName&gt;&lt;technology&gt;&lt;technology&gt;Kotlin&lt;/technology&gt;&lt;technology&gt;SQL Lite&lt;/technology&gt;&lt;technology&gt;Gradle&lt;/technology&gt;&lt;technology&gt;Jenkins&lt;/technology&gt;&lt;/technology&gt;&lt;/project&gt;&lt;/project&gt;&lt;/item&gt;&lt;/List&gt;
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.41">
+      <div class="step-ref passed">41</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.42">
+      <div class="step-ref passed">42</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">45</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.42">14:22:11.133 [print] &lt;List&gt;
+  &lt;item&gt;
+    &lt;jobId&gt;1&lt;/jobId&gt;
+    &lt;jobTitle&gt;Software Engg&lt;/jobTitle&gt;
+    &lt;jobDescription&gt;To develop andriod application&lt;/jobDescription&gt;
+    &lt;experience&gt;
+      &lt;experience&gt;Google&lt;/experience&gt;
+      &lt;experience&gt;Apple&lt;/experience&gt;
+      &lt;experience&gt;Mobile Iron&lt;/experience&gt;
+    &lt;/experience&gt;
+    &lt;project&gt;
+      &lt;project&gt;
+        &lt;projectName&gt;Movie App&lt;/projectName&gt;
+        &lt;technology&gt;
+          &lt;technology&gt;Kotlin&lt;/technology&gt;
+          &lt;technology&gt;SQL Lite&lt;/technology&gt;
+          &lt;technology&gt;Gradle&lt;/technology&gt;
+        &lt;/technology&gt;
+      &lt;/project&gt;
+    &lt;/project&gt;
+  &lt;/item&gt;
+  &lt;item&gt;
+    &lt;jobId&gt;9980&lt;/jobId&gt;
+    &lt;jobTitle&gt;Software Engg - 2&lt;/jobTitle&gt;
+    &lt;jobDescription&gt;To develop andriod application&lt;/jobDescription&gt;
+    &lt;experience&gt;
+      &lt;experience&gt;Google&lt;/experience&gt;
+      &lt;experience&gt;Apple&lt;/experience&gt;
+      &lt;experience&gt;Mobile Iron&lt;/experience&gt;
+      &lt;experience&gt;Google&lt;/experience&gt;
+    &lt;/experience&gt;
+    &lt;project&gt;
+      &lt;project&gt;
+        &lt;projectName&gt;Movie App&lt;/projectName&gt;
+        &lt;technology&gt;
+          &lt;technology&gt;Kotlin&lt;/technology&gt;
+          &lt;technology&gt;SQL Lite&lt;/technology&gt;
+          &lt;technology&gt;Gradle&lt;/technology&gt;
+          &lt;technology&gt;Jenkins&lt;/technology&gt;
+        &lt;/technology&gt;
+      &lt;/project&gt;
+    &lt;/project&gt;
+  &lt;/item&gt;
+  &lt;item&gt;
+    &lt;jobId&gt;9980&lt;/jobId&gt;
+    &lt;jobTitle&gt;Software Engg - 2&lt;/jobTitle&gt;
+    &lt;jobDescription&gt;To develop andriod application&lt;/jobDescription&gt;
+    &lt;experience&gt;
+      &lt;experience&gt;Google&lt;/experience&gt;
+      &lt;experience&gt;Apple&lt;/experience&gt;
+      &lt;experience&gt;Mobile Iron&lt;/experience&gt;
+      &lt;experience&gt;Google&lt;/experience&gt;
+    &lt;/experience&gt;
+    &lt;project&gt;
+      &lt;project&gt;
+        &lt;projectName&gt;Movie App&lt;/projectName&gt;
+        &lt;technology&gt;
+          &lt;technology&gt;Kotlin&lt;/technology&gt;
+          &lt;technology&gt;SQL Lite&lt;/technology&gt;
+          &lt;technology&gt;Gradle&lt;/technology&gt;
+          &lt;technology&gt;Jenkins&lt;/technology&gt;
+        &lt;/technology&gt;
+      &lt;/project&gt;
+    &lt;/project&gt;
+  &lt;/item&gt;
+&lt;/List&gt;
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.43">
+      <div class="step-ref passed">43</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response/List/item[1] ==</span>
+      </div>
+    </div>
+    <div class="time-cell passed">18</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.43">&lt;item&gt;
+&lt;jobId&gt;1&lt;/jobId&gt;
+&lt;jobTitle&gt;Software Engg&lt;/jobTitle&gt;
+&lt;jobDescription&gt;To develop andriod application&lt;/jobDescription&gt;
+&lt;experience&gt;
+  &lt;experience&gt;Google&lt;/experience&gt;
+  &lt;experience&gt;Apple&lt;/experience&gt;
+  &lt;experience&gt;Mobile Iron&lt;/experience&gt;
+&lt;/experience&gt;
+&lt;project&gt;
+  &lt;project&gt;
+    &lt;projectName&gt;Movie App&lt;/projectName&gt;
+    &lt;technology&gt;
+      &lt;technology&gt;Kotlin&lt;/technology&gt;
+      &lt;technology&gt;SQL Lite&lt;/technology&gt;
+      &lt;technology&gt;Gradle&lt;/technology&gt;
+    &lt;/technology&gt;
+  &lt;/project&gt;
+&lt;/project&gt;
+&lt;/item&gt;</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[3:67]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[3:67]</span>
+                <span class="scenario-name">To get the data in JSON format and validate using negate condition</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>9</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[3:67]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[3:67]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.5">14:22:11.154 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.68">
+      <div class="step-ref passed">68</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/normal/webapi/all&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.69">
+      <div class="step-ref passed">69</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Accept = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.70">
+      <div class="step-ref passed">70</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">6</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.70">14:22:11.156 request:
+1 &gt; GET http://localhost:9897/normal/webapi/all
+1 &gt; Accept: application/json
+1 &gt; Host: localhost:9897
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.10)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+14:22:11.161 response time in milliseconds: 4
+1 &lt; 200
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Date: Sun, 19 Apr 2026 08:52:10 GMT
+1 &lt; Keep-Alive: timeout=60
+1 &lt; Connection: keep-alive
+[{&quot;jobId&quot;:1,&quot;jobTitle&quot;:&quot;Software Engg&quot;,&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;],&quot;project&quot;:[{&quot;projectName&quot;:&quot;Movie App&quot;,&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;]}]},{&quot;jobId&quot;:9980,&quot;jobTitle&quot;:&quot;Software Engg - 2&quot;,&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;,&quot;Google&quot;],&quot;project&quot;:[{&quot;projectName&quot;:&quot;Movie App&quot;,&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Jenkins&quot;]}]},{&quot;jobId&quot;:9980,&quot;jobTitle&quot;:&quot;Software Engg - 2&quot;,&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;,&quot;Google&quot;],&quot;project&quot;:[{&quot;projectName&quot;:&quot;Movie App&quot;,&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Jenkins&quot;]}]}]
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.71">
+      <div class="step-ref passed">71</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.72">
+      <div class="step-ref passed">72</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.72">14:22:11.162 [print] [
+  {
+    &quot;jobId&quot;: 1,
+    &quot;jobTitle&quot;: &quot;Software Engg&quot;,
+    &quot;jobDescription&quot;: &quot;To develop andriod application&quot;,
+    &quot;experience&quot;: [
+      &quot;Google&quot;,
+      &quot;Apple&quot;,
+      &quot;Mobile Iron&quot;
+    ],
+    &quot;project&quot;: [
+      {
+        &quot;projectName&quot;: &quot;Movie App&quot;,
+        &quot;technology&quot;: [
+          &quot;Kotlin&quot;,
+          &quot;SQL Lite&quot;,
+          &quot;Gradle&quot;
+        ]
+      }
+    ]
+  },
+  {
+    &quot;jobId&quot;: 9980,
+    &quot;jobTitle&quot;: &quot;Software Engg - 2&quot;,
+    &quot;jobDescription&quot;: &quot;To develop andriod application&quot;,
+    &quot;experience&quot;: [
+      &quot;Google&quot;,
+      &quot;Apple&quot;,
+      &quot;Mobile Iron&quot;,
+      &quot;Google&quot;
+    ],
+    &quot;project&quot;: [
+      {
+        &quot;projectName&quot;: &quot;Movie App&quot;,
+        &quot;technology&quot;: [
+          &quot;Kotlin&quot;,
+          &quot;SQL Lite&quot;,
+          &quot;Gradle&quot;,
+          &quot;Jenkins&quot;
+        ]
+      }
+    ]
+  },
+  {
+    &quot;jobId&quot;: 9980,
+    &quot;jobTitle&quot;: &quot;Software Engg - 2&quot;,
+    &quot;jobDescription&quot;: &quot;To develop andriod application&quot;,
+    &quot;experience&quot;: [
+      &quot;Google&quot;,
+      &quot;Apple&quot;,
+      &quot;Mobile Iron&quot;,
+      &quot;Google&quot;
+    ],
+    &quot;project&quot;: [
+      {
+        &quot;projectName&quot;: &quot;Movie App&quot;,
+        &quot;technology&quot;: [
+          &quot;Kotlin&quot;,
+          &quot;SQL Lite&quot;,
+          &quot;Gradle&quot;,
+          &quot;Jenkins&quot;
+        ]
+      }
+    ]
+  }
+]
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.73">
+      <div class="step-ref passed">73</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response !=</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.73">[
+{
+&quot;jobId&quot;: 2,
+&quot;jobTitle&quot;: &quot;Software Engg&quot;,
+&quot;project&quot;: [
+  {
+    &quot;technology&quot;: [
+      &quot;Kotlin&quot;,
+      &quot;SQL Lite&quot;,
+      &quot;Gradle&quot;
+    ],
+    &quot;projectName&quot;: &quot;Movie App&quot;
+  }
+],
+&quot;jobDescription&quot;: &quot;To develop andriod application&quot;,
+&quot;experience&quot;: [
+  &quot;Google&quot;,
+  &quot;Apple&quot;,
+  &quot;Mobile Iron&quot;
+]
+}
+]</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[4:99]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[4:99]</span>
+                <span class="scenario-name">To get the data in JSON format and validate a specific property</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>9</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[4:99]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[4:99]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.5">14:22:11.168 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.100">
+      <div class="step-ref passed">100</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/normal/webapi/all&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.101">
+      <div class="step-ref passed">101</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Accept = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.102">
+      <div class="step-ref passed">102</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">7</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.102">14:22:11.170 request:
+1 &gt; GET http://localhost:9897/normal/webapi/all
+1 &gt; Accept: application/json
+1 &gt; Host: localhost:9897
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.10)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+14:22:11.175 response time in milliseconds: 4
+1 &lt; 200
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Date: Sun, 19 Apr 2026 08:52:10 GMT
+1 &lt; Keep-Alive: timeout=60
+1 &lt; Connection: keep-alive
+[{&quot;jobId&quot;:1,&quot;jobTitle&quot;:&quot;Software Engg&quot;,&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;],&quot;project&quot;:[{&quot;projectName&quot;:&quot;Movie App&quot;,&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;]}]},{&quot;jobId&quot;:9980,&quot;jobTitle&quot;:&quot;Software Engg - 2&quot;,&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;,&quot;Google&quot;],&quot;project&quot;:[{&quot;projectName&quot;:&quot;Movie App&quot;,&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Jenkins&quot;]}]},{&quot;jobId&quot;:9980,&quot;jobTitle&quot;:&quot;Software Engg - 2&quot;,&quot;jobDescription&quot;:&quot;To develop andriod application&quot;,&quot;experience&quot;:[&quot;Google&quot;,&quot;Apple&quot;,&quot;Mobile Iron&quot;,&quot;Google&quot;],&quot;project&quot;:[{&quot;projectName&quot;:&quot;Movie App&quot;,&quot;technology&quot;:[&quot;Kotlin&quot;,&quot;SQL Lite&quot;,&quot;Gradle&quot;,&quot;Jenkins&quot;]}]}]
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.103">
+      <div class="step-ref passed">103</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.104">
+      <div class="step-ref passed">104</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.104">14:22:11.176 [print] [
+  {
+    &quot;jobId&quot;: 1,
+    &quot;jobTitle&quot;: &quot;Software Engg&quot;,
+    &quot;jobDescription&quot;: &quot;To develop andriod application&quot;,
+    &quot;experience&quot;: [
+      &quot;Google&quot;,
+      &quot;Apple&quot;,
+      &quot;Mobile Iron&quot;
+    ],
+    &quot;project&quot;: [
+      {
+        &quot;projectName&quot;: &quot;Movie App&quot;,
+        &quot;technology&quot;: [
+          &quot;Kotlin&quot;,
+          &quot;SQL Lite&quot;,
+          &quot;Gradle&quot;
+        ]
+      }
+    ]
+  },
+  {
+    &quot;jobId&quot;: 9980,
+    &quot;jobTitle&quot;: &quot;Software Engg - 2&quot;,
+    &quot;jobDescription&quot;: &quot;To develop andriod application&quot;,
+    &quot;experience&quot;: [
+      &quot;Google&quot;,
+      &quot;Apple&quot;,
+      &quot;Mobile Iron&quot;,
+      &quot;Google&quot;
+    ],
+    &quot;project&quot;: [
+      {
+        &quot;projectName&quot;: &quot;Movie App&quot;,
+        &quot;technology&quot;: [
+          &quot;Kotlin&quot;,
+          &quot;SQL Lite&quot;,
+          &quot;Gradle&quot;,
+          &quot;Jenkins&quot;
+        ]
+      }
+    ]
+  },
+  {
+    &quot;jobId&quot;: 9980,
+    &quot;jobTitle&quot;: &quot;Software Engg - 2&quot;,
+    &quot;jobDescription&quot;: &quot;To develop andriod application&quot;,
+    &quot;experience&quot;: [
+      &quot;Google&quot;,
+      &quot;Apple&quot;,
+      &quot;Mobile Iron&quot;,
+      &quot;Google&quot;
+    ],
+    &quot;project&quot;: [
+      {
+        &quot;projectName&quot;: &quot;Movie App&quot;,
+        &quot;technology&quot;: [
+          &quot;Kotlin&quot;,
+          &quot;SQL Lite&quot;,
+          &quot;Gradle&quot;,
+          &quot;Jenkins&quot;
+        ]
+      }
+    ]
+  }
+]
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.105">
+      <div class="step-ref passed">105</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response contains deep {&quot;jobDescription&quot;: &quot;To develop andriod application&quot;}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.106">
+      <div class="step-ref passed">106</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response contains deep {&quot;project&quot;:[{&quot;projectName&quot;: &quot;Movie App&quot;}]}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.107">
+      <div class="step-ref passed">107</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match header Content-Type == &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.108">
+      <div class="step-ref passed">108</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match header Connection == &#39;keep-alive&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
