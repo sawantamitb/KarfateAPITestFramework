@@ -1,4 +1,4 @@
-package com.api.automation.fileupload.runner;
+package com.api.automation.runner.fileupload;
 
 import com.intuit.karate.junit5.Karate;
 import com.intuit.karate.junit5.Karate.Test;

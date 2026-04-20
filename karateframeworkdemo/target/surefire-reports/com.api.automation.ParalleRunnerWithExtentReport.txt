@@ -1,18 +1,18 @@
 -------------------------------------------------------------------------------
 Test set: com.api.automation.ParalleRunnerWithExtentReport
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 20.154 s <<< FAILURE! - in com.api.automation.ParalleRunnerWithExtentReport
-com.api.automation.ParalleRunnerWithExtentReport.executeKarateTest  Time elapsed: 18.276 s  <<< FAILURE!
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 12.964 s <<< FAILURE! - in com.api.automation.ParalleRunnerWithExtentReport
+com.api.automation.ParalleRunnerWithExtentReport.executeKarateTest  Time elapsed: 10.924 s  <<< FAILURE!
 org.opentest4j.AssertionFailedError: 
 match failed: EQUALS
   $ | data types don't match (LIST:STRING)
-  ["1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1"]
+  ["1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1"]
   '1'
 
 classpath:featurefiles/getRequest/validateXMLResponse.feature:17
 match failed: EQUALS
   $ | not a string (LIST:STRING)
-  ["Software Engg","Software Engg","Software Engg","Software Engg","Software Engg","Software Engg","Software Engg","Software Engg","Software Engg","Software Engg","Software Engg","Software Engg","Software Engg","Software Engg","Software Engg","Software Engg","Software Engg","Software Engg","Software Engg","Software Engg","Software Engg","Software Engg","Software Engg","Software Engg","Software Engg","Software Engg","Software Engg","Software Engg","Software Engg","Software Engg","Software Engg","Software Engg","Software Engg","Software Engg","Software Engg","Software Engg","Software Engg","Software Engg","Software Engg","Software Engg","Software Engg","Software Engg","Software Engg","Software Engg","Software Engg","Software Engg","Software Engg","Software Engg","Software Engg","Software Engg","Software Engg","Software Engg","Software Engg","Software Engg","Software Engg","Software Engg","Software Engg","Software Engg","Software Engg","Software Engg","Software Engg","Software Engg","Software Engg","Software Engg","Software Engg","Software Engg","Software Engg","Software Engg","Software Engg","Software Engg"]
+  ["Software Engg","Software Engg","Software Engg","Software Engg","Software Engg","Software Engg","Software Engg","Software Engg","Software Engg","Software Engg","Software Engg","Software Engg","Software Engg","Software Engg","Software Engg","Software Engg","Software Engg","Software Engg","Software Engg","Software Engg","Software Engg","Software Engg","Software Engg","Software Engg","Software Engg","Software Engg","Software Engg","Software Engg","Software Engg","Software Engg","Software Engg","Software Engg","Software Engg","Software Engg","Software Engg","Software Engg","Software Engg","Software Engg","Software Engg","Software Engg","Software Engg","Software Engg","Software Engg","Software Engg","Software Engg","Software Engg","Software Engg","Software Engg","Software Engg","Software Engg","Software Engg","Software Engg","Software Engg","Software Engg","Software Engg","Software Engg","Software Engg","Software Engg","Software Engg","Software Engg","Software Engg","Software Engg","Software Engg","Software Engg","Software Engg","Software Engg","Software Engg","Software Engg","Software Engg","Software Engg","Software Engg","Software Engg","Software Engg","Software Engg","Software Engg","Software Engg","Software Engg","Software Engg","Software Engg","Software Engg","Software Engg","Software Engg"]
   '#string'
 
 classpath:featurefiles/getRequest/validateXMLResponse.feature:33 ==> expected: <0> but was: <2>

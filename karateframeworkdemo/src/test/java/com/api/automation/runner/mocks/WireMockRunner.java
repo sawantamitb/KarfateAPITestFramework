@@ -1,4 +1,4 @@
-package com.api.automation.mocks.runner;
+package com.api.automation.runner.mocks;
 
 import com.intuit.karate.junit5.Karate;
 import com.intuit.karate.junit5.Karate.Test;

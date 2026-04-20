@@ -1,4 +1,4 @@
-package com.api.automation.datadriven.runner;
+package com.api.automation.runner.datadriven;
 
 import com.intuit.karate.junit5.Karate;
 import com.intuit.karate.junit5.Karate.Test;

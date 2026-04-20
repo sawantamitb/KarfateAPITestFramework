@@ -1,4 +1,4 @@
-package com.api.automation.putrequest.runner;
+package com.api.automation.runner.putrequest;
 
 import com.intuit.karate.junit5.Karate;
 import com.intuit.karate.junit5.Karate.Test;
