@@ -8,7 +8,8 @@ public class TestJavaScriptRunner{
 	@Test
 	public Karate runTest() {
 		return Karate.run(
-			"classpath:featurefiles/postRequest/javaScriptExecutor.feature"		
+			"classpath:featurefiles/postRequest/javaScriptExecutor.feature",
+			"classpath:featurefiles/postRequest/karateJavaScriptAPI.feature"
 		)
 		.tags("~@ignore");
 	}	

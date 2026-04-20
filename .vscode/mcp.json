@@ -1,0 +1,9 @@
+{
+  "servers": {
+    "karate-dsl": {
+      "type": "stdio",
+      "command": "node",
+      "args": ["C:\\Personal\\Education\\VisualStudio_Workspace\\karate-mcp-server\\dist\\index.js"]
+    }
+  }
+}
